@@ -1,14 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using ModuloLimitadorVelocidad.Data;
+using Microsoft.AspNetCore.Identity;
+using ModuloLimitadorVelocidad.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ModuloLimitadorVelocidadDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ModuloLimitadorVelocidadDbContextConnection' not found.");
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ModuloLimitadorVelocidadDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddDbContext<MVC_DbContext>(options=>
     options.UseSqlServer(builder.Configuration
     .GetConnectionString("Mvc_DbConnectionString")));
 
+builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ModuloLimitadorVelocidadDbContext>();
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -24,11 +33,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapRazorPages();
 
 app.Run();

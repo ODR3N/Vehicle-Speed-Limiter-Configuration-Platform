@@ -2,7 +2,29 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<head>
+
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="~/background.jpg" alt="Background"></div>
+        <div class="text-center content">
+            <h1 class="display-4">Modulo Limitador de Velocidad</h1>
+            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        </div>
+    </div>
+
+</body>
+
+
+@section scripts {
+    <script src="~/Scripts/parallax.js"></script>
+}
+
+
