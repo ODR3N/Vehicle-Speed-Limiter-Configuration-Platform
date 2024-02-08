@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ModuloLimitadorVelocidad.Areas.Identity.Data;
 using ModuloLimitadorVelocidad.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using ModuloLimitadorVelocidad.Data;
 
 namespace ModuloLimitadorVelocidad.Controllers
 {
@@ -8,13 +11,16 @@ namespace ModuloLimitadorVelocidad.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+
         }
 
         public IActionResult Index()
         {
+      
             return View();
         }
 
@@ -29,4 +35,6 @@ namespace ModuloLimitadorVelocidad.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
+
+
 }

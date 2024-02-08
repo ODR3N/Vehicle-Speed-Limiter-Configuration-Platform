@@ -12,12 +12,17 @@ builder.Services.AddDbContext<MVC_DbContext>(options=>
     options.UseSqlServer(builder.Configuration
     .GetConnectionString("Mvc_DbConnectionString")));
 
-builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ModuloLimitadorVelocidadDbContext>();
 
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages();
+
+builder.Services.Configure<IdentityOptions>(options => 
+{
+    options.Password.RequireUppercase = false;
+});
 
 var app = builder.Build();
 
