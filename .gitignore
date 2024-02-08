@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ModuloLimitadorVelocidad/DesignTimeBuild/.dtbcache.v2
+/.vs/ModuloLimitadorVelocidad/FileContentIndex/10522ef9-3975-4a9f-b113-188ded4c26e4.vsidx
+*.vsidx
+/.vs/ModuloLimitadorVelocidad/FileContentIndex/a4539a54-d190-42a9-826e-8a960de5266a.vsidx
+/.vs/ModuloLimitadorVelocidad/FileContentIndex/9edc448d-cbd4-4d43-97dd-4ec6ea612209.vsidx
+/.vs/ModuloLimitadorVelocidad/FileContentIndex/adb01aab-f342-4c95-ad27-edc93d935458.vsidx
+/.vs/ModuloLimitadorVelocidad/FileContentIndex/c504d980-5ab3-4730-ada7-3e3e81ab4c8a.vsidx
