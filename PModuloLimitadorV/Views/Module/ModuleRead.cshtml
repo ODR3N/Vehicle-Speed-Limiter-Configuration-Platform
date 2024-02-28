@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "ModuleRead";
+}
+@model List<PModuloLimitadorV.Models.Vehiculo>
+
+<!-- Botón -->
+<button id="btnConectar">Conectar</button>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#btnConectar").click(function () {
+                // Ajustar la URL con @*@Url.Action*@ para generar la URL de forma dinámica
+                $.ajax({
+                    // Asegúrate de que la acción y el controlador coincidan con tu proyecto
+                    url: '@Url.Action("ObtenerPuertosDisponibles", "Module")',
+                    type: 'GET',
+                    success: function (data) {
+                        if (data.ConexionExitosa) {
+                            alert('Conexión exitosa. Puerto: ' + data.Puerto);
+                        } else {
+                            alert('No se ha detectado el módulo. ' + data.Mensaje);
+                        }
+                    },
+                    error: function () {
+                        alert('Error al obtener la información del puerto COM.');
+                    }
+                });
+            });
+        });
+    </script>
+}
