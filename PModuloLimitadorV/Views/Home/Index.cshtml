@@ -2,32 +2,63 @@
     ViewBag.Title = "Home Page";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluye la hoja de estilos de Fotorama -->
+    <link rel="stylesheet" href="lib/fotorama/fotorama.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #informacion {
+            flex: 2;
+            padding: 20px;
+        }
+
+        #fotos {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+    <title>Quiénes Somos</title>
+</head>
+<body>
+    <div id="informacion">
+        <h2>QUIÉNES SOMOS</h2>
+        <p>
+            Ingeniería Autotronix S.A. es una empresa dedicada al diagnóstico y reparación de computadoras y paneles electrónicos automotrices. Con más de 15 años de experiencia, brindamos un servicio de calidad gracias a equipo de tecnología de punta y contamos con ingenieros en electrónica, electromecánica y técnicos.
+
+            Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país.
+
+            También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
+        </p>
     </div>
-</main>
+
+    <!-- Div para la galería Fotorama -->
+    <div id="fotos">
+        <!-- Agrega las imágenes de tu galería -->
+        <img src="imagen1.jpg" alt="Foto 1">
+        <img src="imagen2.jpg" alt="Foto 2">
+        <img src="imagen3.jpg" alt="Foto 3">
+        <img src="imagen4.jpg" alt="Foto 4">
+    </div>
+
+    <!-- Incluye el script de Fotorama y jQuery (necesario para Fotorama) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="lib/fotorama/fotorama.js"></script>
+</body>
+</html>
+

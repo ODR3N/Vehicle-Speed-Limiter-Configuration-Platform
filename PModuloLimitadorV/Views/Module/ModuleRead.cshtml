@@ -1,8 +1,46 @@
 ﻿
 @{
-    ViewBag.Title = "ModuleRead";
+    ViewBag.Title = "Seleccione el Modelo de su Vehiculo";
 }
 @model List<PModuloLimitadorV.Models.Vehiculo>
+
+<style>
+    #listasDesplegables {
+        text-align: center;
+        margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+    }
+
+    .listaDesplegable {
+        margin-bottom: 10px; /* Espacio entre las listas desplegables */
+    }
+</style>
+
+<!-- Contenedor para las listas desplegables -->
+<div id="listasDesplegables">
+    <div class="listaDesplegable">
+        <h4>Marca</h4>
+        <select id="listaMarca">
+            <option value="">Seleccione Marca</option>
+            <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
+        </select>
+    </div>
+
+    <div class="listaDesplegable">
+        <h4>Modelo</h4>
+        <select id="listaModelo">
+            <option value="">Seleccione Modelo</option>
+            <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
+        </select>
+    </div>
+
+    <div class="listaDesplegable">
+        <h4>Año</h4>
+        <select id="listaAnio">
+            <option value="">Seleccione Año</option>
+            <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
+        </select>
+    </div>
+</div>
 
 <!-- Botón -->
 <button id="btnConectar">Conectar</button>
@@ -13,12 +51,14 @@
             $("#btnConectar").click(function () {
                 // Ajustar la URL con @*@Url.Action*@ para generar la URL de forma dinámica
                 $.ajax({
-                    // Asegúrate de que la acción y el controlador coincidan con tu proyecto
                     url: '@Url.Action("ObtenerPuertosDisponibles", "Module")',
                     type: 'GET',
                     success: function (data) {
                         if (data.ConexionExitosa) {
                             alert('Conexión exitosa. Puerto: ' + data.Puerto);
+
+                            // Redirigir a la nueva vista después de mostrar el mensaje
+                            window.location.href = '@Url.Action("ModuleConfigure", "Module")';
                         } else {
                             alert('No se ha detectado el módulo. ' + data.Mensaje);
                         }

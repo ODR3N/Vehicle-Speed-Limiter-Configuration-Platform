@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Intronix S.A", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,20 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Intronix S.A</p>
+            <!-- Agrega esto en tu vista Index.cshtml donde deseas mostrar las publicaciones de Facebook -->
+            <div id="facebookPagePlugin">
+                <!-- Reemplaza 'IntronixCR' con el nombre de tu página de Facebook -->
+                <div class="fb-page" data-href="https://www.facebook.com/IntronixCR/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/IntronixCR/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/IntronixCR/">Intronix CR</a>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Incluye el SDK de Facebook JavaScript -->
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
+
         </footer>
     </div>
 

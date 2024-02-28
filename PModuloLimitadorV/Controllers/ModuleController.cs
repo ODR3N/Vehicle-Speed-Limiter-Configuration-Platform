@@ -25,6 +25,13 @@ namespace PModuloLimitadorV.Controllers
             return View();
         }
 
+        public ActionResult ModuleConfigure()
+        {
+
+
+            return View();
+        }
+
         [HttpGet]
         public ActionResult ObtenerPuertosDisponibles()
         {
