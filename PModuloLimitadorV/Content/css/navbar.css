@@ -1,0 +1,26 @@
+/* Estilos para la barra de navegacion */
+.navbar {
+    background-color: var(--color1);
+}
+
+.navbar-brand,
+.text-white {
+    color: var(--blanco);
+}
+
+.img-principal {
+    width: 190px;
+}
+
+.Logo-Perfil {
+    width: 50px;
+}
+
+.navbar-brand:hover,
+.text-white:hover {
+    color: var(--color4);
+}
+
+.nav-item.dropdown {
+    list-style: none;
+}

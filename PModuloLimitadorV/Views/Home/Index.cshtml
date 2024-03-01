@@ -1,33 +1,162 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using System.Security.Claims;
+@{
+    ViewBag.Title = "Bienvenido";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+@Styles.Render("~/Content/cssIndexHome")
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+@if (User.Identity.IsAuthenticated)
+{
+
+    @* saca el usuario actual junto con sus identidades *@
+    var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
+    @* Se saca el rol y si no lo tiene se asigna uno *@
+    var roleOfUser = claimsIdentity != null ? claimsIdentity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value : "Estudiante";
+
+
+    if (roleOfUser == "Admin")
+    {
+
+        <h3>Administración</h3>
+        <hr />
+
+    }
+    else if (roleOfUser == "Empleado")
+    {
+        <h3>Bienvenidos profesores</h3>
+        <hr />
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="~/Content/imgs/Presentacion.png" class="card-img-top" alt="Imagen de mis recetas">
+                        <div class="card-body">
+                            <h5 class="card-title">Recetas</h5>
+                            <p class="card-text">Explora todas las recetas creadas.</p>
+                            @Html.ActionLink("Ir a mis recetas", "Index", "Recetas", new { area = "" }, new { @class = "btn btn-light" })
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    }
+    else if (roleOfUser == "Cliente")
+    {
+
+        <h3>Bienvenidos estudiantes</h3>
+        <hr />
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="~/Content/imgs/Presentacion.png" class="card-img-top" alt="Imagen de mis recetas">
+                        <div class="card-body">
+                            <h5 class="card-title">Mis Recetas</h5>
+                            <p class="card-text">Explora un mundo de sabores y crea tus propias recetas.</p>
+                            @Html.ActionLink("Ir a mis recetas", "Index", "Recetas", new { area = "" }, new { @class = "btn btn-light" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="~/Content/imgs/CursosL.jpg" style="height:191px;" class="card-img-top" alt="Imagen mis cursos">
+                        <div class="card-body">
+                            <h5 class="card-title">Cursos</h5>
+                            <p class="card-text">Accede a tus cursos.</p>
+                            @Html.ActionLink("Ir a mis cursos", "Index", "Cursoes", new { area = "" }, new { @class = "btn btn-light" })
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    }
+    else
+    {
+        <h3>Usuario Invitado</h3>
+        <hr />
+    }
+}
+else
+{
+    //Presentacion
+    <div class="card text-bg-dark">
+        <img src="~/Content/imgs/Presentacion1.png" class="card-img" alt="...">
+        <div class="card-img-overlay text-center">
+            <h1 class="card-title font-weight-bold text-center">Bienvenidos a Weston: La escuela de cocina preferida</h1>
+        </div>
     </div>
-</main>
+
+    // Cursos
+    <br />
+    <br />
+    <div class="container-fluid title-info">
+        <h5 class="text-center text-infoA">Cursos completos</h5>
+    </div>
+    <br />
+    <br />
+
+    <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="~/Content/imgs/CursosL.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Variedad de cursos culinarios</h5>
+                    <p class="card-text">Aprenderás con nosotros diversas técnicas, en diversos horarios para tu mayor comodidad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    // Profesores
+    <br />
+    <br />
+
+    <div class="container-fluid title-info">
+        <h5 class="text-center text-infoA">Personal de calidad</h5>
+    </div>
+    <br />
+    <br />
+
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Profesores con mas de 4 años de experiencia</h5>
+                <p class="card-text">"Agradecido de formar parte del equipo y ser mentor de esta escuela".</p>
+                <p class="card-text"><small class="text-body-secondary">Marco Antonio -Profesor de la escuela.</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Atención a estudiantes</h5>
+                <p class="card-text">Contáctanos por nuestras redes sociales.</p>
+                <p class="card-text"><small class="text-body-secondary"></small></p>
+            </div>
+        </div>
+    </div>
+
+    //Info
+    <br />
+    <br />
+    <div class="card">
+        <div class="card-header title-info text-infoA">
+            ¿Cómo matriculo?
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Ponte en contacto con nosotros através de nuestras redes sociales</h5>
+            <p class="card-text">También pudes visitar nuestras sedes en San José, Cartago y Heredia.</p>
+        </div>
+    </div>
+}

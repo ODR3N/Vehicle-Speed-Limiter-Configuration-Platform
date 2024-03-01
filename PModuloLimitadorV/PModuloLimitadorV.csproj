@@ -50,6 +50,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -197,6 +199,25 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\css\details.css" />
+    <Content Include="Content\css\footer.css" />
+    <Content Include="Content\css\general.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\indexHome.css" />
+    <Content Include="Content\css\login.css" />
+    <Content Include="Content\css\navbar.css" />
+    <Content Include="Content\imgs\cursos.jpg" />
+    <Content Include="Content\imgs\cursosaprende.jpg" />
+    <Content Include="Content\imgs\CursosL.jpg" />
+    <Content Include="Content\imgs\fondo1.jpg" />
+    <Content Include="Content\imgs\LogoLogin.png" />
+    <Content Include="Content\imgs\personal.jpg" />
+    <Content Include="Content\imgs\postre1.jpg" />
+    <Content Include="Content\imgs\postre2.jpg" />
+    <Content Include="Content\imgs\postre3.jpg" />
+    <Content Include="Content\imgs\Presentacion.png" />
+    <Content Include="Content\imgs\Presentacion1.png" />
+    <Content Include="Content\imgs\User.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -254,6 +275,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -281,6 +303,9 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

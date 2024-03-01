@@ -1,0 +1,20 @@
+:root {
+    --color1: #634C27;
+    --color2: #BD4B2C;
+    --color3: #9F864C;
+    --color4: #B8B15B;
+    --color4-1: #aba354;
+    --color5: #2D2533;
+    --color6: #D7D2CB;
+    --blanco: #FFFF;
+}
+
+body {
+    background-image: url(../imgs/fondo1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.titles {
+    color: var(--color2);
+}
