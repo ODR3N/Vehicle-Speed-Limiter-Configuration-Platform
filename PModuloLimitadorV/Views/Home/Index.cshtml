@@ -14,7 +14,7 @@
     <!-- Incluye la hoja de estilos de Fotorama -->
     <link rel="stylesheet" href="lib/fotorama/fotorama.css">
 
-    <style>
+    @*<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,7 +31,32 @@
         #fotos {
             flex: 1;
             padding: 20px;
+        }*@
+
+    <style>
+
+        #informacion {
+            flex: 2;
+            padding: 20px;
         }
+
+            #informacion p {
+                color: white; /* Color del texto dentro de los párrafos */
+            }
+
+            #informacion h2 {
+                color: white; /* Color del texto dentro de los párrafos */
+            }
+        #fotos {
+            padding: 20px;
+        }
+
+            #fotos img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+    </style>
     </style>
     <title>Quiénes Somos</title>
 </head>
@@ -45,16 +70,18 @@
 
             También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
         </p>
+        <p>
+            Intronix es una empresa con más de 18 años de experiencia en el diagnóstico y reparación de computadoras y paneles de instrumentos automotrices.
+
+        </p>
+        <p>
+            Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país.
+
+            También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
+
+        </p>
     </div>
 
-    <!-- Div para la galería Fotorama -->
-    <div id="fotos">
-        <!-- Agrega las imágenes de tu galería -->
-        <img src="imagen1.jpg" alt="Foto 1">
-        <img src="imagen2.jpg" alt="Foto 2">
-        <img src="imagen3.jpg" alt="Foto 3">
-        <img src="imagen4.jpg" alt="Foto 4">
-    </div>
 
     <!-- Incluye el script de Fotorama y jQuery (necesario para Fotorama) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,19 +1,49 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Tecnico e Informacion</title>
+
+    <style>
+
+        body {
+            color: white;
+        }
+
+        /* Estilos para el título de la pestaña del navegador */
+        head > title {
+            text-align: center;
+            margin-bottom: 20px; /* Agrega espacio hacia abajo */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor del mapa con subtítulo -->
+    <div id="mapa-container">
+        <h3>Ubicación</h3>
+        <!-- Inserta el iframe con el mapa de Google Maps -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.851100721484!2d-83.90728758756237!3d9.862856990194931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0df3729cb9589%3A0xf25d612882b15c0e!2sINTRONIX%20CR!5e0!3m2!1ses!2scr!4v1709253132482!5m2!1ses!2scr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Otro contenido de la página aquí -->
+
+</body>
+</html>
 
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
-
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        <strong>Soporte:</strong>   <a href="mailto:Support@example.com">2552-6789</a><br />
+        <strong>Correo:</strong> <a href="mailto:Marketing@example.com">info@intronix.cr</a>
     </address>
 </main>
