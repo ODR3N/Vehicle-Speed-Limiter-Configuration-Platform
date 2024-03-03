@@ -1,91 +1,162 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using System.Security.Claims;
+@{
+    ViewBag.Title = "Bienvenido";
 }
 
+@Styles.Render("~/Content/cssIndexHome")
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
+@if (User.Identity.IsAuthenticated)
+{
+
+    @* saca el usuario actual junto con sus identidades *@
+    var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
+    @* Se saca el rol y si no lo tiene se asigna uno *@
+    var roleOfUser = claimsIdentity != null ? claimsIdentity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value : "Estudiante";
 
 
+    if (roleOfUser == "Admin")
+    {
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Incluye la hoja de estilos de Fotorama -->
-    <link rel="stylesheet" href="lib/fotorama/fotorama.css">
+        <h3>Administración</h3>
+        <hr />
 
-    @*<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
+    }
+    else if (roleOfUser == "Empleado")
+    {
+        <h3>Bienvenidos Empleados Intronix</h3>
+        <hr />
 
-        #informacion {
-            flex: 2;
-            padding: 20px;
-        }
 
-        #fotos {
-            flex: 1;
-            padding: 20px;
-        }*@
+        <div class="container">
+            <div class="row">
 
-    <style>
+                <div class="col-sm-6">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="~/Content/imgs/Presentacion.png" class="card-img-top" alt="Imagen de mis recetas">
+                        <div class="card-body">
+                            <h5 class="card-title">Recetas</h5>
+                            <p class="card-text">Explora todas las recetas creadas.</p>
+                            @Html.ActionLink("Ir a mis recetas", "Index", "Recetas", new { area = "" }, new { @class = "btn btn-light" })
+                        </div>
+                    </div>
+                </div>
 
-        #informacion {
-            flex: 2;
-            padding: 20px;
-        }
+            </div>
+        </div>
 
-            #informacion p {
-                color: white; /* Color del texto dentro de los párrafos */
-            }
 
-            #informacion h2 {
-                color: white; /* Color del texto dentro de los párrafos */
-            }
-        #fotos {
-            padding: 20px;
-        }
+    }
+    else if (roleOfUser == "Cliente")
+    {
 
-            #fotos img {
-                max-width: 100%;
-                height: auto;
-                margin-bottom: 10px;
-            }
-    </style>
-    </style>
-    <title>Quiénes Somos</title>
-</head>
-<body>
-    <div id="informacion">
-        <h2>QUIÉNES SOMOS</h2>
-        <p>
-            Ingeniería Autotronix S.A. es una empresa dedicada al diagnóstico y reparación de computadoras y paneles electrónicos automotrices. Con más de 15 años de experiencia, brindamos un servicio de calidad gracias a equipo de tecnología de punta y contamos con ingenieros en electrónica, electromecánica y técnicos.
+        <h3>Bienvenidos Cliente Intronix</h3>
+        <hr />
 
-            Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país.
+        <div class="container">
+            <div class="row">
 
-            También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
-        </p>
-        <p>
-            Intronix es una empresa con más de 18 años de experiencia en el diagnóstico y reparación de computadoras y paneles de instrumentos automotrices.
+                <div class="col-sm-6">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="~/Content/imgs/Presentacion.png" class="card-img-top" alt="Imagen de mis recetas">
+                        <div class="card-body">
+                            <h5 class="card-title">Mis Recetas</h5>
+                            <p class="card-text">Explora un mundo de sabores y crea tus propias recetas.</p>
+                            @Html.ActionLink("Ir a mis recetas", "Index", "Recetas", new { area = "" }, new { @class = "btn btn-light" })
+                        </div>
+                    </div>
+                </div>
 
-        </p>
-        <p>
-            Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país.
+                <div class="col-sm-6">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="~/Content/imgs/CursosL.jpg" style="height:191px;" class="card-img-top" alt="Imagen mis cursos">
+                        <div class="card-body">
+                            <h5 class="card-title">Cursos</h5>
+                            <p class="card-text">Accede a tus cursos.</p>
+                            @Html.ActionLink("Ir a mis cursos", "Index", "Cursoes", new { area = "" }, new { @class = "btn btn-light" })
+                        </div>
+                    </div>
+                </div>
 
-            También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
+            </div>
+        </div>
 
-        </p>
+    }
+    else
+    {
+        <h3>Usuario Invitado</h3>
+        <hr />
+    }
+}
+else
+{
+    //Presentacion
+    <div class="card text-bg-dark">
+        <img src="~/Content/imgs/Presentacion1.png" class="card-img" alt="...">
+        <div class="card-img-overlay text-center">
+            <h1 class="card-title font-weight-bold text-center">Bienvenidos a INTRONIX: Expertos en tecnologia Automotriz</h1>
+        </div>
     </div>
 
+    // Cursos
+    <br />
+    <br />
+    <div class="container-fluid title-info">
+        <h5 class="text-center text-infoA">Cursos completos</h5>
+    </div>
+    <br />
+    <br />
 
-    <!-- Incluye el script de Fotorama y jQuery (necesario para Fotorama) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="lib/fotorama/fotorama.js"></script>
-</body>
-</html>
+    <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="~/Content/imgs/CursosL.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Variedad de cursos culinarios</h5>
+                    <p class="card-text">Aprenderás con nosotros diversas técnicas, en diversos horarios para tu mayor comodidad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    // Profesores
+    <br />
+    <br />
+
+    <div class="container-fluid title-info">
+        <h5 class="text-center text-infoA">Personal de calidad</h5>
+    </div>
+    <br />
+    <br />
+
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Profesores con mas de 4 años de experiencia</h5>
+                <p class="card-text">"Agradecido de formar parte del equipo y ser mentor de esta escuela".</p>
+                <p class="card-text"><small class="text-body-secondary">Marco Antonio -Profesor de la escuela.</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Atención a estudiantes</h5>
+                <p class="card-text">Contáctanos por nuestras redes sociales.</p>
+                <p class="card-text"><small class="text-body-secondary"></small></p>
+            </div>
+        </div>
+    </div>
+
+    //Info
+    <br />
+    <br />
+    <div class="card">
+        <div class="card-header title-info text-infoA">
+            ¿Cómo matriculo?
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Ponte en contacto con nosotros através de nuestras redes sociales</h5>
+            <p class="card-text">También pudes visitar nuestras sedes en San José, Cartago y Heredia.</p>
+        </div>
+    </div>
+}

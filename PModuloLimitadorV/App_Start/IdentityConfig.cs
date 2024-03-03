@@ -18,7 +18,7 @@ namespace PModuloLimitadorV
     {
         public Task SendAsync(IdentityMessage message)
         {
-            // Conecte el servicio de correo electrónico aquí para enviar un correo electrónico.
+            // Plug in your email service here to send an email.
             return Task.FromResult(0);
         }
     }
@@ -27,30 +27,30 @@ namespace PModuloLimitadorV
     {
         public Task SendAsync(IdentityMessage message)
         {
-            // Conecte el servicio SMS aquí para enviar un mensaje de texto.
+            // Plug in your SMS service here to send a text message.
             return Task.FromResult(0);
         }
     }
 
-    // Configure el administrador de usuarios de aplicación que se usa en esta aplicación. UserManager se define en ASP.NET Identity y se usa en la aplicación.
-    public class ApplicationUserManager : UserManager<ApplicationUser>
+    // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
+    public class ApplicationUserManager : UserManager<ApplicationUser, string>
     {
-        public ApplicationUserManager(IUserStore<ApplicationUser> store)
+        public ApplicationUserManager(IUserStore<ApplicationUser, string> store)
             : base(store)
         {
         }
 
-        public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
+        public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context)
         {
-            var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ApplicationDbContext>()));
-            // Configure la lógica de validación de nombres de usuario
+            var manager = new ApplicationUserManager(new UserStore<ApplicationUser, Role, string, IdentityUserLogin, IdentityUserRole, IdentityUserClaim>(context.Get<ApplicationDbContext>()));
+            // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)
             {
                 AllowOnlyAlphanumericUserNames = false,
                 RequireUniqueEmail = true
             };
 
-            // Configure la lógica de validación de contraseñas
+            // Configure validation logic for passwords
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
@@ -60,35 +60,49 @@ namespace PModuloLimitadorV
                 RequireUppercase = true,
             };
 
-            // Configurar valores predeterminados para bloqueo de usuario
+            // Configure user lockout defaults
             manager.UserLockoutEnabledByDefault = true;
             manager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
             manager.MaxFailedAccessAttemptsBeforeLockout = 5;
 
-            // Registre los proveedores de autenticación de dos factores. Esta aplicación usa el teléfono y el correo electrónico para recibir un código de verificación del usuario
-            // Puede escribir su propio proveedor y conectarlo aquí.
-            manager.RegisterTwoFactorProvider("Código telefónico", new PhoneNumberTokenProvider<ApplicationUser>
+            // Register two factor authentication providers. This application uses Phone and Emails as a step of receiving a code for verifying the user
+            // You can write your own provider and plug it in here.
+            manager.RegisterTwoFactorProvider("Phone Code", new PhoneNumberTokenProvider<ApplicationUser>
             {
-                MessageFormat = "Su código de seguridad es {0}"
+                MessageFormat = "Your security code is {0}"
             });
-            manager.RegisterTwoFactorProvider("Código de correo electrónico", new EmailTokenProvider<ApplicationUser>
+            manager.RegisterTwoFactorProvider("Email Code", new EmailTokenProvider<ApplicationUser>
             {
-                Subject = "Código de seguridad",
-                BodyFormat = "Su código de seguridad es {0}"
+                Subject = "Security Code",
+                BodyFormat = "Your security code is {0}"
             });
             manager.EmailService = new EmailService();
             manager.SmsService = new SmsService();
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
             {
-                manager.UserTokenProvider = 
+                manager.UserTokenProvider =
                     new DataProtectorTokenProvider<ApplicationUser>(dataProtectionProvider.Create("ASP.NET Identity"));
             }
             return manager;
         }
     }
 
-    // Configure el administrador de inicios de sesión que se usa en esta aplicación.
+    public class ApplicationRoleManager : RoleManager<Role>
+    {
+        public ApplicationRoleManager(IRoleStore<Role, string> store)
+            : base(store) { }
+
+        public static ApplicationRoleManager Create(IdentityFactoryOptions<ApplicationRoleManager> options, IOwinContext context)
+        {
+            return new ApplicationRoleManager(new RoleStore<Role>(context.Get<ApplicationDbContext>()));
+
+        }
+
+    }
+
+
+    // Configure the application sign-in manager which is used in this application.
     public class ApplicationSignInManager : SignInManager<ApplicationUser, string>
     {
         public ApplicationSignInManager(ApplicationUserManager userManager, IAuthenticationManager authenticationManager)
@@ -107,3 +121,4 @@ namespace PModuloLimitadorV
         }
     }
 }
+

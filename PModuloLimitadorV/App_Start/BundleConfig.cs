@@ -5,7 +5,7 @@ namespace PModuloLimitadorV
 {
     public class BundleConfig
     {
-        // Para obtener más información sobre las uniones, visite https://go.microsoft.com/fwlink/?LinkId=301862
+        // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -14,17 +14,39 @@ namespace PModuloLimitadorV
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Utilice la versión de desarrollo de Modernizr para desarrollar y obtener información sobre los formularios.  De esta manera estará
-            // para la producción, use la herramienta de compilación disponible en https://modernizr.com para seleccionar solo las pruebas que necesite.
+            // Use the development version of Modernizr to develop with and learn from. Then, when you're
+            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap.bundle.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // estilos personalizados
+            bundles.Add(new StyleBundle("~/Content/mycssLogin").Include(
+                      "~/Content/css/login.css"));
+
+            bundles.Add(new StyleBundle("~/Content/mycss").Include(
+                      "~/Content/css/general.css",
+                      "~/Content/css/navbar.css",
+                      "~/Content/css/footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/myDetailsCss").Include(
+                      "~/Content/css/general.css",
+                      "~/Content/css/details.css",
+                      "~/Content/css/navbar.css",
+                      "~/Content/css/footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/mycssIndex").Include(
+                      "~/Content/css/index.css"));
+
+            bundles.Add(new StyleBundle("~/Content/cssIndexHome").Include(
+                      "~/Content/css/indexHome.css"));
         }
     }
 }

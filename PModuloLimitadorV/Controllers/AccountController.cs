@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -17,14 +18,15 @@ namespace PModuloLimitadorV.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-
+        private ApplicationRoleManager _roleManager;
         public AccountController()
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationRoleManager roleManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
+            RoleManager = roleManager;
             SignInManager = signInManager;
         }
 
@@ -34,9 +36,9 @@ namespace PModuloLimitadorV.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -51,6 +53,19 @@ namespace PModuloLimitadorV.Controllers
                 _userManager = value;
             }
         }
+
+        public ApplicationRoleManager RoleManager
+        {
+            get
+            {
+                return _roleManager ?? HttpContext.GetOwinContext().Get<ApplicationRoleManager>();
+            }
+            private set
+            {
+                _roleManager = value;
+            }
+        }
+
 
         //
         // GET: /Account/Login
@@ -73,23 +88,57 @@ namespace PModuloLimitadorV.Controllers
                 return View(model);
             }
 
-            // No cuenta los errores de inicio de sesión para el bloqueo de la cuenta
-            // Para permitir que los errores de contraseña desencadenen el bloqueo de la cuenta, cambie a shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            // This doesn't count login failures towards account lockout
+            // To enable password failures to trigger account lockout, change to shouldLockout: true
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: true);
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+
+
+
+                    var user = await UserManager.FindByEmailAsync(model.Email);
+
+                    if (user != null)
+                    {
+                        var roles = await UserManager.GetRolesAsync(user.Id);
+
+
+                        if (roles.Contains("Admin"))
+                        {
+                            user.UltimaConexion = DateTime.Now;
+                            await UserManager.UpdateAsync(user);
+                            return RedirectToAction("Index", "Home");
+                        }
+                        else if (roles.Contains("Cliente"))
+                        {
+                            user.UltimaConexion = DateTime.Now;
+                            await UserManager.UpdateAsync(user);
+                            return RedirectToAction("Index", "Home");
+                        }
+                        else if (roles.Contains("Empleado"))
+                        {
+                            user.UltimaConexion = DateTime.Now;
+                            await UserManager.UpdateAsync(user);
+                            return RedirectToAction("Index", "Home");
+                        }
+                    }
+
+                    // Si el usuario no tiene un rol específico, redirige a alguna acción predeterminada
+                    return RedirectToAction("Index", "Home");
+
+
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Intento de inicio de sesión no válido.");
+                    ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
         }
+
 
         //
         // GET: /Account/VerifyCode
@@ -120,7 +169,7 @@ namespace PModuloLimitadorV.Controllers
             // Si un usuario introduce códigos incorrectos durante un intervalo especificado de tiempo, la cuenta del usuario 
             // se bloqueará durante un período de tiempo especificado. 
             // Puede configurar el bloqueo de la cuenta en IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -139,10 +188,22 @@ namespace PModuloLimitadorV.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            List<Role> rolesDB = RoleManager.Roles.ToList();
+            if (rolesDB.Count == 0)
+            {
+                Role admin = new Role() { Id = Guid.NewGuid().ToString(), Name = "Admin", Description = "Rol de super usuario", Activo = true };
+                Role empleado = new Role() { Id = Guid.NewGuid().ToString(), Name = "Empleado", Description = "Rol de usuario empleado", Activo = true };
+                Role cliente = new Role() { Id = Guid.NewGuid().ToString(), Name = "Cliente", Description = "Rol de usuario cliente", Activo = true };
+                RoleManager.Create(admin);
+                RoleManager.Create(empleado);
+                RoleManager.Create(cliente);
+                rolesDB = RoleManager.Roles.ToList();
+            }
+
+            ViewBag.Roles = rolesDB;
             return View();
         }
 
-        //
         // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
@@ -151,24 +212,34 @@ namespace PModuloLimitadorV.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser
+                {
+                    UserName = model.Email,
+                    Email = model.Email,
+                    Nombre = model.Nombre.Trim(),
+                    Apellidos = model.Apellidos.Trim(),
+                    UltimaConexion = DateTime.Now,
+                    Activo = true
+
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
-                    // Para obtener más información sobre cómo habilitar la confirmación de cuentas y el restablecimiento de contraseña, visite https://go.microsoft.com/fwlink/?LinkID=320771
-                    // Enviar un correo electrónico con este vínculo
+                    IdentityResult resultRole = UserManager.AddToRoles(user.Id, RoleManager.Roles.Where(r => r.Id == model.Rol).FirstOrDefault().Name);
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+
+                    // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
+                    // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirmar la cuenta", "Para confirmar su cuenta, haga clic <a href=\"" + callbackUrl + "\">aquí</a>");
+                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
             }
 
-            // Si llegamos a este punto, es que se ha producido un error y volvemos a mostrar el formulario
+            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
@@ -205,19 +276,19 @@ namespace PModuloLimitadorV.Controllers
                 var user = await UserManager.FindByNameAsync(model.Email);
                 if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
                 {
-                    // No revelar que el usuario no existe o que no está confirmado
+                    // Don't reveal that the user does not exist or is not confirmed
                     return View("ForgotPasswordConfirmation");
                 }
 
-                // Para obtener más información sobre cómo habilitar la confirmación de cuentas y el restablecimiento de contraseña, visite https://go.microsoft.com/fwlink/?LinkID=320771
-                // Enviar un correo electrónico con este vínculo
+                // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
+                // Send an email with this link
                 // string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
                 // var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);		
-                // await UserManager.SendEmailAsync(user.Id, "Restablecer contraseña", "Para restablecer la contraseña, haga clic <a href=\"" + callbackUrl + "\">aquí</a>");
+                // await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
                 // return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
 
-            // Si llegamos a este punto, es que se ha producido un error y volvemos a mostrar el formulario
+            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
@@ -251,7 +322,7 @@ namespace PModuloLimitadorV.Controllers
             var user = await UserManager.FindByNameAsync(model.Email);
             if (user == null)
             {
-                // No revelar que el usuario no existe
+                // Don't reveal that the user does not exist
                 return RedirectToAction("ResetPasswordConfirmation", "Account");
             }
             var result = await UserManager.ResetPasswordAsync(user.Id, model.Code, model.Password);
@@ -278,7 +349,7 @@ namespace PModuloLimitadorV.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult ExternalLogin(string provider, string returnUrl)
         {
-            // Solicitar redireccionamiento al proveedor de inicio de sesión externo
+            // Request a redirect to the external login provider
             return new ChallengeResult(provider, Url.Action("ExternalLoginCallback", "Account", new { ReturnUrl = returnUrl }));
         }
 
@@ -309,7 +380,7 @@ namespace PModuloLimitadorV.Controllers
                 return View();
             }
 
-            // Generar el token y enviarlo
+            // Generate the token and send it
             if (!await SignInManager.SendTwoFactorCodeAsync(model.SelectedProvider))
             {
                 return View("Error");
@@ -328,7 +399,7 @@ namespace PModuloLimitadorV.Controllers
                 return RedirectToAction("Login");
             }
 
-            // Si el usuario ya tiene un inicio de sesión, iniciar sesión del usuario con este proveedor de inicio de sesión externo
+            // Sign in the user with this external login provider if the user already has a login
             var result = await SignInManager.ExternalSignInAsync(loginInfo, isPersistent: false);
             switch (result)
             {
@@ -340,7 +411,7 @@ namespace PModuloLimitadorV.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = false });
                 case SignInStatus.Failure:
                 default:
-                    // Si el usuario no tiene ninguna cuenta, solicitar que cree una
+                    // If the user does not have an account, then prompt the user to create an account
                     ViewBag.ReturnUrl = returnUrl;
                     ViewBag.LoginProvider = loginInfo.Login.LoginProvider;
                     return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = loginInfo.Email });
@@ -361,7 +432,7 @@ namespace PModuloLimitadorV.Controllers
 
             if (ModelState.IsValid)
             {
-                // Obtener datos del usuario del proveedor de inicio de sesión externo
+                // Get the information about the user from the external login provider
                 var info = await AuthenticationManager.GetExternalLoginInfoAsync();
                 if (info == null)
                 {
@@ -423,8 +494,8 @@ namespace PModuloLimitadorV.Controllers
             base.Dispose(disposing);
         }
 
-        #region Aplicaciones auxiliares
-        // Se usa para la protección XSRF al agregar inicios de sesión externos
+        #region Helpers
+        // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
 
         private IAuthenticationManager AuthenticationManager
