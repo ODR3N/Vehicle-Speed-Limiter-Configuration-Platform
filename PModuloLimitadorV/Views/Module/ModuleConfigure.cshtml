@@ -1,7 +1,17 @@
-﻿
-@{
-    ViewBag.Title = "Configurar Modulo de Velocidad";
+﻿@{
+    ViewBag.Title = "Configurar Módulo";
 }
 
-<h2>ModuleConfigure</h2>
+<h2 style="color: white;">Configurar Módulo</h2>
+
+@using (Html.BeginForm("UpdateLimit", "Module", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="limite" style="color: white;">Nuevo Límite de Velocidad:</label>
+        <input type="number" class="form-control" id="limite" name="limite" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+}
+
+
 

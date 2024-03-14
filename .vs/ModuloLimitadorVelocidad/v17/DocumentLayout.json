@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T02:17:57.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T02:06:20.275Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -84,41 +54,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAwGIAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T02:08:03.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
               "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T01:48:03.701Z",
+              "WhenOpened": "2024-03-14T04:15:20.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAfAQAA",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T01:45:25.449Z",
+              "WhenOpened": "2024-03-14T03:58:18.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T02:32:59.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModuleConfigure.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T02:32:47.463Z",
               "EditorCaption": ""
             }
           ]

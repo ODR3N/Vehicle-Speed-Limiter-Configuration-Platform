@@ -45,23 +45,17 @@
 
                         if (roleOfUser == "Cliente")
                         {
-                            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            
                             <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
                         }
                         else if (roleOfUser == "Empleado")
                         {
-                            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            
                             <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
                         }
                         else if (roleOfUser == "Admin")
                         {
-                            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            
                             <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
                             <li>@Html.ActionLink("Usuarios", "Index", "Admin", new { area = "" }, new { @class = "nav-link text-white" })</li>
                         }

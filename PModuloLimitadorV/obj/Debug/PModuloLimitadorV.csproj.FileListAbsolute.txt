@@ -470,3 +470,5 @@ C:\Users\adrfc\OneDrive\Escritorio\Proyecto Intronix\PModuloLimitadorV\obj\Debug
 C:\Users\adrfc\OneDrive\Escritorio\Proyecto Intronix\PModuloLimitadorV\obj\Debug\PModuloL.BB5C9CFE.Up2Date
 C:\Users\adrfc\OneDrive\Escritorio\Proyecto Intronix\PModuloLimitadorV\obj\Debug\PModuloLimitadorV.dll
 C:\Users\adrfc\OneDrive\Escritorio\Proyecto Intronix\PModuloLimitadorV\obj\Debug\PModuloLimitadorV.pdb
+C:\Users\adrfc\OneDrive\Escritorio\Proyecto Intronix\PModuloLimitadorV\bin\System.IO.Ports.dll
+C:\Users\adrfc\OneDrive\Escritorio\Proyecto Intronix\PModuloLimitadorV\bin\System.IO.Ports.xml
