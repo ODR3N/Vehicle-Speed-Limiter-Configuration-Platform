@@ -8,6 +8,14 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/mycss")
 
+    <style>
+        body {
+            background-image: url('../../content/imgs/fondo1.jpg');/* Ruta de la imagen de fondo */
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+            background-position: center; /* Centra la imagen de fondo */
+        }
+    </style>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -35,23 +43,26 @@
                         var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
                         var roleOfUser = claimsIdentity != null ? claimsIdentity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value : "Estudiante";
 
-                        if (roleOfUser == "Estudiante")
+                        if (roleOfUser == "Cliente")
                         {
-                            <li>@Html.ActionLink("Biblioteca Recetas", "Index", "Recetas", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Ver Cursos", "Index", "VerCursos", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Matricular", "Index", "Matricula", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Mis recetas", "Index", "Recetasind", new { area = "" }, new { @class = "nav-link text-white" })</li>
-
+                            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
                         }
-                        else if (roleOfUser == "Profesor")
+                        else if (roleOfUser == "Empleado")
                         {
-                            <li>@Html.ActionLink("Lista de Cursos", "Index", "VerCursos", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Mis cursos", "Index", "Cursopro", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Biblioteca Recetas", "Index", "Recetas", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                            <li>@Html.ActionLink("Recetas Cursos", "Index", "RecetasLista", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
                         }
                         else if (roleOfUser == "Admin")
                         {
+                            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                            <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
                             <li>@Html.ActionLink("Usuarios", "Index", "Admin", new { area = "" }, new { @class = "nav-link text-white" })</li>
                         }
                     }
@@ -70,7 +81,7 @@
         @RenderBody()
         <hr />
         <footer>
-            &copy; @DateTime.Now.Year - Eat Weston
+            &copy; @DateTime.Now.Year - Intronix S.A
             <a class="text-white" style="margin-right: 5px;" href="@Url.Action("Acciones", "Home", new { tipo = "RedirectResultFacebook" })">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />

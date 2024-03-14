@@ -1,110 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\",
+  "WorkspaceRootPath": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\shared_2\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared_2\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\views\\home_2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home_2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\onedrive\\im\u00E1genes\\escritorio\\clonargit\\pmodulolimitadorv\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\pmodulolimitadorv\\views\\module\\moduleread.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleread.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\pmodulolimitadorv\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:296:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
@@ -130,7 +42,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -139,337 +51,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Web.config",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Web.config",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Web.config",
-              "RelativeToolTip": "PModuloLimitadorV\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-03-03T12:21:29.366Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAwGIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T02:08:03.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Startup.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Startup.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Startup.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:21:22.959Z",
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T01:48:03.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Web.config",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Web.config",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Web.config",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-03-03T12:21:18.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAABMAAAAAAAAAAAAmwDwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-03T12:20:55.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADsAAAAAAAAAAAAqwGQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-03T12:20:48.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAmwDwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-03T12:19:39.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAACAAAAAAAAAAAAAmwEkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-03T12:19:25.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAmwCQAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-03T12:19:12.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAmwKIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-03T12:19:00.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ManageViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\ManageViewModels.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Models\\ManageViewModels.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\ManageViewModels.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Models\\ManageViewModels.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAwwFUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:17:23.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IdentityModels.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\IdentityModels.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Models\\IdentityModels.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\IdentityModels.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Models\\IdentityModels.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA9wDwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:17:12.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AccountViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\AccountViewModels.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Models\\AccountViewModels.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\AccountViewModels.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Models\\AccountViewModels.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAmwH8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:16:58.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Shared_2\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared_2\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Shared_2\\_Layout.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared_2\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T02:23:21.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ManageController.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Controllers\\ManageController.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ManageController.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Controllers\\ManageController.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ManageController.cs",
-              "ViewState": "AQIAAGsBAAAAAAAAAAAIwIQBAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:16:30.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Startup.Auth.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\Startup.Auth.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\App_Start\\Startup.Auth.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\Startup.Auth.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\App_Start\\Startup.Auth.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwEMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:16:04.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:16:02.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
               "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAfAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-01T00:27:46.076Z",
+              "WhenOpened": "2024-03-14T01:45:25.449Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IdentityConfig.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\IdentityConfig.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\App_Start\\IdentityConfig.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\IdentityConfig.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\App_Start\\IdentityConfig.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAmwHwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:15:35.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home_2\\Index.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home_2\\Index.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Home_2\\Index.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home_2\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T02:25:54.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FilterConfig.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\FilterConfig.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\App_Start\\FilterConfig.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\FilterConfig.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\App_Start\\FilterConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:15:31.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\App_Start\\BundleConfig.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:15:02.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAAN8AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:13:15.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ModuleController.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T22:43:29.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ModuleConfigure.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T02:13:37.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ModuleRead.cshtml",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Module\\ModuleRead.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleRead.cshtml",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Views\\Module\\ModuleRead.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleRead.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T00:53:45.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Vehiculo.cs",
-              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\Vehiculo.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Models\\Vehiculo.cs",
-              "ToolTip": "C:\\Users\\diego\\OneDrive\\Im\u00E1genes\\Escritorio\\CLONARGIT\\PModuloLimitadorV\\Models\\Vehiculo.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Models\\Vehiculo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T22:42:50.856Z"
             }
           ]
         },

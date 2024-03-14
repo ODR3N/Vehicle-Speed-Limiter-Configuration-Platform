@@ -208,19 +208,14 @@
     <Content Include="Content\css\indexHome.css" />
     <Content Include="Content\css\login.css" />
     <Content Include="Content\css\navbar.css" />
-    <Content Include="Content\imgs\cursos.jpg" />
-    <Content Include="Content\imgs\cursosaprende.jpg" />
-    <Content Include="Content\imgs\CursosL.jpg" />
+    <Content Include="Content\imgs\edificio %283%29.jpg" />
     <Content Include="Content\imgs\fondo1.jpg" />
     <Content Include="Content\imgs\Intronix.png" />
+    <Content Include="Content\imgs\logo2018color jpg.jpg" />
     <Content Include="Content\imgs\LogoLogin.png" />
-    <Content Include="Content\imgs\personal.jpg" />
-    <Content Include="Content\imgs\postre1.jpg" />
-    <Content Include="Content\imgs\postre2.jpg" />
-    <Content Include="Content\imgs\postre3.jpg" />
+    <Content Include="Content\imgs\Personal.jpg" />
     <Content Include="Content\imgs\Presentacion.png" />
-    <Content Include="Content\imgs\Presentacion1.png" />
-    <Content Include="Content\imgs\User.png" />
+    <Content Include="Content\imgs\Tecnicos.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -257,11 +252,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared_2\Error.cshtml" />
-    <Content Include="Views\Shared_2\_Layout.cshtml" />
-    <Content Include="Views\Home_2\About.cshtml" />
-    <Content Include="Views\Home_2\Contact.cshtml" />
-    <Content Include="Views\Home_2\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -280,8 +270,6 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared_2\Lockout.cshtml" />
-    <Content Include="Views\Shared_2\_LoginPartial.cshtml" />
     <Content Include="Views\Module\ModuleRead.cshtml" />
     <Content Include="Views\Module\ModuleConfigure.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -294,9 +282,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ModuleModels\" />
-    <Folder Include="Views\ModuloLimitadorVelocidadDBContext\" />
-    <Folder Include="Views\Vehiculo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
