@@ -1,0 +1,140 @@
+.centro {
+    position: absolute;
+    width: 100%;
+    top: 33%;
+    /*left: 5%;*/
+    padding: 10px 50px;
+    display: inline-block;
+    text-align: center;
+    margin-left: -18%;
+}
+
+.texto-direccion {
+    margin: 0 10% 40px 10%;
+    /*width: 70%;*/
+    padding-left: 2%;
+}
+
+.texto-direccion2 {
+    margin-bottom: 20px;
+}
+
+.info_direccion2, 
+.texto-direccion, 
+.texto-direccion2, 
+.ubicacion, 
+.contactos,
+.titulo_logos {
+    font-family: "Poppins", sans-serif;
+}
+
+.info_direccion2 {
+    color: rgb(240, 173, 78);
+    /*color: white;*/
+    text-align: center;
+    font-size: 75px;
+}
+
+.info_horario2 {
+    color: rgb(240, 173, 78);
+}
+
+#typedtext {
+    font-size: 25px;
+}
+
+.texto-about2 p {
+    color: white;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+
+/*MAPA*/
+#mapa-container {
+    margin-left: -8%;
+}
+
+.ubicacion {
+    color: rgba(4, 0, 70, 1);
+    font-size: 40px;
+    margin: 3% 0;
+}
+/*FIN MAPA*/
+
+address {
+    margin-bottom: 5%;
+}
+
+.contactos {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    padding-top: 50px;
+    color: rgba(4, 0, 70, 1);
+    margin: 10% 0 5% 0;
+}
+
+.btn_correo {
+    border-radius: 30px;
+    border-width: 2px;
+    color: rgba(4, 0, 70, 1);
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+   /* .btn_contacto:hover {
+        background-color: rgba(2, 0, 36, 1);
+        color: white;
+    }*/
+
+.mail_logo {
+    width: 30px;
+    height: 20px;
+}
+
+/*.mail_logo:hover {
+    fill: white;
+}*/
+
+.btn_telefono {
+    border-radius: 30px;
+    border-width: 2px;
+    color: rgba(4, 0, 70, 1);
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logos {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    line-height: 5;
+}
+
+.telefono_logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.titulo_logos {
+    font-size: 40px;
+    margin-bottom: -2%;
+    font-weight: 300;
+/*    color: rgb(240, 173, 78);
+*/}
+
+.left, .right {
+    width: 400px;
+    padding: 15px;
+}
+

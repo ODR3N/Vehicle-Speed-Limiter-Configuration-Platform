@@ -19,14 +19,16 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                    aria-expanded="false">
                     @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "text-white" })
-                    <img src="~/Content/imgs/User.png" alt="Logo-Perfil" class="img-thumbnail Logo-Perfil" srcset="">
+                    <a class="loguillo" href="https://localhost:44345/Manage">
+                        <img src="~/Content/imgs/User.png" alt="Logo-Perfil" class="User" width="25px" height="25px" srcset="">
+                    </a>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item-text" href="https://localhost:44345/Manage">Perfil</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesion</a></li>
+                    <li><a class="dropdown-item-text" href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesion</a></li>
                 </ul>
             </li>
         </ul>

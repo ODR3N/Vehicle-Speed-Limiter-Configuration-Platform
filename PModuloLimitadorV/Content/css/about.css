@@ -1,0 +1,215 @@
+﻿.centro {
+    position: absolute;
+    top: 33%;
+    /*left: 5%;*/
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 18%;
+}
+
+.info_about2, .us .localizanos {
+    font-family: "Poppins", sans-serif;
+}
+
+.info_about2 {
+    text-align: center
+}
+
+.texto-about {
+   margin-bottom: 60px;
+}
+
+#typedtext {
+    font-size: 75px;
+}
+
+.texto-about2 p {
+    color: white;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+
+
+/*SOBRE NOSOTROS ARDUINO*/
+
+.us {
+    font-size: 100px;
+    font-weight: 200;
+    color: rgba(4, 0, 70, 1);
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+
+.sn {
+    height: 430px;
+    margin-bottom: 25%;
+}
+
+.sobre_nosotros {
+    display: flex;
+    position: absolute;
+    height: 430px;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_SN {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 50px;
+}
+
+.info_SN p {
+    margin: 40px 150px 40px 0;
+    color: #777777;
+    font-family: 'Poppins', Sans, serif;
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.mas_info {
+    font-weight: bold;
+    color: #18109d;
+}
+
+.video_SN {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.video_arduino {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    justify-content: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .6s ease-in-out;
+}
+
+    .imagen_grupo:hover {
+        transform: scale(1.03);
+    }
+
+.intronix_grupo {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*FIN DE SOBRE NOSOTROS ARDUINO*/
+
+
+
+/*SOBRE NOSOTROS MENSAJERIA*/
+
+.sn2 {
+    height: 430px;
+    margin-bottom: 25%;
+}
+
+.sobre_nosotros2 {
+    display: flex;
+    position: absolute;
+    height: 430px;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_SN2 {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+.info_SN2 p {
+    margin: 40px 110px 40px 0;
+    color: #777777;
+    font-family: 'Poppins', Sans, serif;
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.mas_info {
+    font-weight: bold;
+    color: #18109d;
+}
+
+.video_SN2 {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.video_mensajeria {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    justify-content: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .6s ease-in-out;
+}
+
+video {
+    display: block;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+/*FIN DE SOBRE NOSOTROS MENSAJERIA*/
+
+
+/*VIDEO MLV */
+.titulo_video_MLV {
+    color: rgba(4, 0, 70, 1);
+    text-align: center;
+    margin: 10% 0;
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+.video_MLV {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15%;
+}
+/*FIN VIDEO MLV */
+
+.localizanos {
+    font-family: "Poppins", sans-serif;
+    color: rgba(4, 0, 70, 1);
+    font-size: 40px;
+}
+
+.mapa {
+    margin-bottom: 8%;
+}

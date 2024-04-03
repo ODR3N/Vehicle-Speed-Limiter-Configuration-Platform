@@ -1,74 +1,189 @@
-﻿@using PModuloLimitadorV.Models
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html>
+<head>
 
-@model LoginViewModel
-@{
-    ViewBag.Title = "Log in";
+    @using PModuloLimitadorV.Models
 
-    Layout = null;
-}
+    @model LoginViewModel
+    @{
+        ViewBag.Title = "Log in";
 
-@Styles.Render("~/Content/css")
-@Styles.Render("~/Content/mycssLogin")
+        Layout = null;
+    }
 
-<main class="container my-5" aria-labelledby="title">
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/mycssLogin")
 
-    <div class="row">
-        <div class="col-md-8 card rounded-3">
-            <section id="loginForm">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="~/Content/css/login.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+</head>
+
+@*<div class="all">*@
+
+    <body>
+        @*-------------------------*@
+
+
+
+        @*<div class="cuerpo">
+            <div class="main">
                 @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
                 {
                     @Html.AntiForgeryToken()
-                    <div>
-                        <h3 class="title titles"><b>Bienvenido</b></h3>
-                        <p class="title">Por favor, identifíquese para continuar.</p>
-                        <hr />
-                    </div>
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    <div class="row">
-                        <label class="col-md-2 col-form-label">Correo</label>
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <br />
 
-                    <div class="row">
-                        <label class="col-md-2 col-form-label">Contraseña</label>
-                        <div class="col-md-10">
-                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    <h1>Bienvenido</h1>
+                    <h3>Ingrese sus credenciales para continuar</h3>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <form action="">
+                <label for="first">
+                    Correo:
+                </label>
+
+                @Html.TextBoxFor(m => m.Correo, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Correo, "", new { @class = "text-danger" })
+
+                <label for="password">
+                    Contraseña:
+                </label>
+                <input type="password" name="password" id="password" />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                @Html.PasswordFor(m => m.Contraseña, new { @class = "form-control" })
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                @Html.ValidationMessageFor(m => m.Contraseña, "", new { @class = "text-danger" })
+
+
+
+
+                <div class="checkbox sqr">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                </div>
+
+
+                <div class="wrap">
+                    <button type="submit"
+                            onclick="solve()">
+                        Submit
+                    </button>
+                </div>
+            </form>
+                    <p>
+                        No tienes cuenta aún?
+                        <a href="~/Account/Register"
+                           style="text-decoration: none;">
+                            Registrarme
+                        </a>
+                    </p>
+                }
+            </div>
+        </div>
+
+
+        <script>
+            const togglePassword = document
+                .querySelector('#togglePassword');
+            const password = document.querySelector('#password');
+            togglePassword.addEventListener('click', () => {
+                // Toggle the type attribute using
+                // getAttribure() method
+                const type = password
+                    .getAttribute('type') === 'password' ?
+                    'text' : 'password';
+                password.setAttribute('type', type);
+                // Toggle the eye and bi-eye icon
+                this.classList.toggle('bi-eye');
+            });
+        </script>*@
+
+
+
+        @*-------------------------*@
+        <main class="container my-5" aria-labelledby="title">
+
+        <div class="row">
+            <div class="col-md-8 card rounded-3">
+                <section id="loginForm">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div>
+                            <h3 class="title titles"><b>Bienvenido</b></h3>
+                            <p class="title">Por favor, identifíquese para continuar.</p>
+                            <hr />
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="offset-md-2 col-md-10">
-                            <div class="checkbox">
-                                @Html.CheckBoxFor(m => m.RememberMe)
-                                @Html.LabelFor(m => m.RememberMe)
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="row">
+                            <label class="col-md-2 col-form-label">Correo</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.Correo, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Correo, "", new { @class = "text-danger" })
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="offset-md-2 col-md-10">
-                            <input type="submit" value="Log in" class="btn btn-outline-dark" />
-                        </div>
-                    </div>
+                        <br />
 
-                    @* Enable this once you have account confirmation enabled for password reset functionality
-                        <p>
-                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                        </p>*@
-                }
-            </section>
-        </div>
-        <div class="col-md-4 card rounded-3" style="background-color: #BD4B2C;">
+                        <div class="row">
+                            <label class="col-md-2 col-form-label">Contraseña</label>
+                            <div class="col-md-10">
+                                @Html.PasswordFor(m => m.Contraseña, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Contraseña, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-2 col-md-10">
+                                <div class="checkbox">
+                                    @Html.CheckBoxFor(m => m.RememberMe)
+                                    @Html.LabelFor(m => m.RememberMe)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-2 col-md-10">
+                                <input type="submit" value="Log in" class="btn btn-outline-dark" />
+                            </div>
+                        </div>
+
+                        <span>No tienes cuenta aun?</span>
+                        <a href="~/Account/Register">Registrarme</a>
+
+                        //Enable this once you have account confirmation enabled for password reset functionality
+                            <p>
+                                @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                            </p>
+                    }
+                </section>
+            </div>
+        @*<div class="col-md-4 card rounded-3" style="background-color: #BD4B2C;">
             <section id="socialLoginForm">
                 @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
             </section>
+        </div>*@
         </div>
-    </div>
-</main>
+    </main>
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+    </body>
+@*</div>*@
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+</html>

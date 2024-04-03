@@ -1,54 +1,192 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<main aria-labelledby="title">
-    <h2 id="title" style="color: white;">Sobre nosotros</h2>
-    <h3 style="color: white;">Intronix S.A</h3>
-    <p style="color: white;">
-    Ingeniería Autotronix S.A. es una empresa dedicada al diagnóstico y reparación de computadoras y paneles electrónicos automotrices. Con más de 15 años de experiencia, brindamos un servicio de calidad gracias a equipo de tecnología de punta y contamos con ingenieros en electrónica, electromecánica y técnicos.
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Weston</title>
 
-    Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país.
+    <link rel="stylesheet" href="~/Content/css/about.css">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
-    </p>
-    <p style="color: white;">
-    Intronix es una empresa con más de 18 años de experiencia en el diagnóstico y reparación de computadoras y paneles de instrumentos automotrices.
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    </p>
-    <p style="color: white;">
-    Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país.
+    @{
+        ViewBag.Title = "About";
+    }
 
-    También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
-    </p>
-        <div class="card-group">
-            <div class="card">
-                <img src="~/Content/imgs/edificio (3).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sede Principal</h5>
-                    <p class="card-text">En donde se diagnostica y repara cada equipo.</p>
-                </div>
+</head>
 
-            </div>
-            <div class="card">
-                <img src="~/Content/imgs/Personal.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Tecnicos y Personal</h5>
-                    <p class="card-text">Contamos con un personal altamente capacitado para resolver tus dudas y problemas en el vehiculo.</p>
-                </div>
+<body>
 
-            </div>
-            <div class="card">
-                <img src="~/Content/imgs/Tecnicos.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Equipo de Diagnostico</h5>
-                    <p class="card-text">Contamos contamos con gran variedad de equipos de diagnostico para desarrollar nuestra maestria en diagnostico de equipos electronicos.</p>
-                </div>
+    @*TEXTO AUTOMATICO CON JS*@
 
-            </div>
+    <div class="centro">
+        <div class="texto-about">
+            <h2 id="typedtext"></h2>
         </div>
 
-        <br /><br />
-        <h3 style="color: white;">Localizanos</h3>
-    <p style="color: white;">Nuestra sede se encuentra en San Rafel de Oreamuno de Cartago.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.851100721484!2d-83.90728758756237!3d9.862856990194931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0df3729cb9589%3A0xf25d612882b15c0e!2sINTRONIX%20CR!5e0!3m2!1ses!2scr!4v1709253132482!5m2!1ses!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</main>
+        <div class="texto-about2">
+            <p class="info_about2">
+                Intronix es una empresa con más de 18 años de experiencia en el diagnóstico y reparación de computadoras y paneles de instrumentos automotrices.
+                Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país. También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
+            </p>
+        </div>
+    </div>
+    @*JS DE TEXTO AUTOMATICO*@
+    <script type="text/javascript">
+        // set up text to print, each item in array is new line
+        var aText = new Array(
+            "¿Quiénes Somos?"
+        );
+        var iSpeed = 70; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+
+        function typewriter() {
+            sContents = ' ';
+            iRow = Math.max(0, iIndex - iScrollAt);
+            var destination = document.getElementById("typedtext");
+
+            while (iRow < iIndex) {
+                sContents += aText[iRow++] + '<br />';
+            }
+            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "";
+            if (iTextPos++ == iArrLength) {
+                iTextPos = 0;
+                iIndex++;
+                if (iIndex != aText.length) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                }
+            } else {
+                setTimeout("typewriter()", iSpeed);
+            }
+        }
+
+        typewriter();
+    </script>
+    @*FIN JS DE TEXTO AUTOMATICO*@
+
+
+    @*SOBRE NOSOTROS SECTION*@
+    <main aria-labelledby="title">
+        <h2 class="us">Sobre nosotros</h2>
+
+        <div class="sn">
+
+            <div class="sobre_nosotros">
+                <div class="texto_SN">
+                    <div class="info_SN">
+                        <h1>Servicios</h1>
+                        <p>
+                            Ingeniería Autotronix S.A. es una empresa dedicada al diagnóstico y reparación de computadoras y paneles electrónicos automotrices. Con más de 15 años de experiencia, brindamos un servicio de calidad gracias a equipo de tecnología de punta y contamos con ingenieros en electrónica, electromecánica y técnicos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video_SN">
+                    <div class="video_arduino">
+                        <video controls autoplay muted loop>
+                            <source src="~/Content/videos/arreglando_arduino_1280x720.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sn2">
+
+            <div class="sobre_nosotros2">
+
+                <div class="video_SN2">
+                    <div class="video_mensajeria">
+                        <video controls autoplay muted loop>
+                            <source src="~/Content/videos/servicio_mensajeria_1280x720.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+
+
+                <div class="texto_SN2">
+                    <div class="info_SN2">
+                        <h1>Entregas</h1>
+                        <p>
+                            Le ofrecemos servicio de mensajería para recoger en San José, Heredia, Alajuela, y además encomiendas para todo el país. También brindamos soporte a nuestros clientes por medio de consultas técnicas y diagramas eléctricos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        @*FIN SOBRE NOSOTROS SECTION*@
+
+
+        @*JS AUTOPLAY VIDEO ON SCROLL SOBRE NOSOTROS SECTION*@
+        <script type="text/javascript">
+            window.addEventListener('load', videoScroll);
+            window.addEventListener('scroll', videoScroll);
+
+            function videoScroll() {
+
+                if (document.querySelectorAll('video[autoplay]').length > 0) {
+                    var windowHeight = window.innerHeight,
+                        videoEl = document.querySelectorAll('video[autoplay]');
+
+                    for (var i = 0; i < videoEl.length; i++) {
+
+                        var thisVideoEl = videoEl[i],
+                            videoHeight = thisVideoEl.clientHeight,
+                            videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+                        if (videoClientRect <= ((windowHeight) - (videoHeight * .5)) && videoClientRect >= (0 - (videoHeight * .5))) {
+                            thisVideoEl.play();
+                        } else {
+                            thisVideoEl.pause();
+                        }
+
+                    }
+                }
+
+            }
+        </script>
+        @*FIN JS AUTOPLAY VIDEO ON SCROLL SOBRE NOSOTROS SECTION*@
+
+
+        @*VIDEO MLV*@
+        <h1 class="titulo_video_MLV">
+            CONOZCA NUESTRO MÓDULO LIMITADOR DE VELOCIDAD
+        </h1>
+
+        <div class="video_MLV">
+            <div class="video_mlv">
+                <video controls autoplay muted loop>
+                    <source src="~/Content/videos/video_hecho.mov" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+        @*FIN VIDEO MLV*@
+
+
+        <div class="mapa">
+            <h3 class="localizanos">Localizanos</h3>
+            <p>Nuestra sede se encuentra en San Rafel de Oreamuno de Cartago.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.851100721484!2d-83.90728758756237!3d9.862856990194931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0df3729cb9589%3A0xf25d612882b15c0e!2sINTRONIX%20CR!5e0!3m2!1ses!2scr!4v1709253132482!5m2!1ses!2scr" width="1300" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+</body>
+</html>

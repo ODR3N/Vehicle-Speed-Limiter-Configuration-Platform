@@ -1,42 +1,301 @@
-/* Estilos para la lista de navegación */
-.nav-container {
-    display: inline-block;
-}
 
-/* Estilos para las tarjetas del curso */
-.img-curso {
+/*Carousel de Servicios*/
+
+.back {
+    position: absolute;
+    background: rgb(209 208 208 / 13%);
+    height: 880px;
+    /*top: 0;*/
+    left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caru {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 880px;
+    margin-bottom: 100px;
+}
+
+.services {
+    left: 0;
+}
+
+.services-background {
+/*    background: rgba(0, 0, 0, 0.125);*/
+}
+
+h3 {
+    text-align: center;
+    font-size: 100px;
+    font-family: "Poppins", Sans-Serif;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+.wrapper {
+    margin: 75px 0px 75px 0px;
+    width: 100%;
+}
+
+    .wrapper i {
+        height: 50px;
+        width: 50px;
+/*        background: rgb(240, 173, 78);
+*/        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        font-size: 1.25 rem;
+        transform: translateY(-50%);
+/*        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+*/    }
+
+        .wrapper i:first-child {
+            left: -22px;
+            z-index: 1;
+            font-size: 90px;
+            color: yellowgreen;
+        }
+
+        .wrapper i:last-child {
+            right: -22px;
+            font-size: 90px;
+            color: yellowgreen;
+        }
+
+    .wrapper .carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+    }
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    padding: 30px 10px 30px 10px;
+    height: 450px;
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    width: 98%;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+    .card .img img {
+        width: 306px;
+        height: 198px;
+        object-fit: cover;
+        border-radius: 5%;
+        border: 4px solid #fff;
+    }
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card span {
+    color: #6a6d78;
+    font-size: 1.21rem;
+    padding: 20px 5px 20px 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*Fin carousel*/
+
+
+/*QUIENES SOMOS*/
+
+.quienes_somos {
+    display: flex;
+    position: absolute;
+    height: 625px;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.qs {
+    height: 625px;
+    margin-bottom: 10%;
+}
+
+.texto_QS {
+    width: 45%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-top: 50px;
 }
 
-.card {
-    transition: background-color 0.3s;
+.info_QS p {
+    margin: 40px 250px 40px 0;
+    color: #777777;
+    font-family: 'Poppins', Sans, serif;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
-    .card:hover {
-        background: linear-gradient(90deg, var(--color3), var(--color4));
+.mas_info {
+    font-weight: bold;
+    color: #18109d;
+}
+
+.imagen_QS {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagen_grupo {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    justify-content: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .6s ease-in-out;
+   overflow: hidden;
+}
+
+    .imagen_grupo:hover {
+        transform: scale(1.03);
     }
 
-.btn-curso-details {
-    color: var(--blanco);
-    background-color: var(--color2);
+.intronix_grupo {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-    .btn-curso-details:hover {
-        color: var(--blanco);
-        background-color: #bc593d;
-    }
+/*FIN DE QUIENES SOMOS*/
 
-/* Estilos para las pestañas de navegación */
-.nav-tabs > .nav-item > .nav-link {
-    color: black;
+
+/*CONTACTENOS*/
+
+.cs {
+    height: 380px;
+    z-index: 1;
+    margin-bottom: 10%;
 }
 
-.nav.nav-tabs {
-    border-bottom: 2px solid var(--color1);
+.contactenos {
+    display: flex;
+    position: absolute;
+    height: 380px;
+    color: white;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(2, 0, 36, 1); /*dark blue*/
 }
 
-    .nav.nav-tabs .nav-link:hover {
-        background-color: var(--color4);
-        color: var(--blanco);
+.texto_contacto {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 6;
+    width: 30%;
+}
+
+.info_contacto {
+    width: 100%;
+}
+
+.rrss_btns svg {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+.redes {
+    padding: 8px;
+}
+
+.rrss_btns .wa {
+    width: 42px;
+    height: 42px;
+    margin-left: -6px;
+}
+
+
+.btn_contacto {
+    border-radius: 30px;
+    border: solid white;
+    border-width: 2px;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+    .btn_contacto:hover {
+        background-color: white;
+        color: rgba(2, 0, 36, 1);
     }

@@ -4,99 +4,169 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Weston</title>
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+
+
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/mycss")
 
-    <style>
-        body {
-            background-image: url('../../content/imgs/fondo1.jpg');/* Ruta de la imagen de fondo */
-            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-            background-position: center; /* Centra la imagen de fondo */
-        }
-    </style>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+
 </head>
+
 <body>
-    <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
-                <img src="~/Content/imgs/Intronix.png" alt="Logo" class="img-thumbnail img-principal" srcset="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                    <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                    @if (User.Identity.IsAuthenticated)
-                    {
 
-                        var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
-                        var roleOfUser = claimsIdentity != null ? claimsIdentity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value : "Estudiante";
+    @*NEW NAVBAR*@
+    <header>
+        <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+            <img src="~/Content/imgs/LogoIntronixTransparente.png" alt="Logo" class="logo_home" srcset="">
+        </a>
+        <ul class="menu">
+            <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+            <li>@Html.ActionLink("Acerca", "About", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+            <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+            @if (User.Identity.IsAuthenticated)
+            {
 
-                        if (roleOfUser == "Cliente")
-                        {
-                            
-                            <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
-                        }
-                        else if (roleOfUser == "Empleado")
-                        {
-                            
-                            <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
-                        }
-                        else if (roleOfUser == "Admin")
-                        {
-                            
-                            <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
-                            <li>@Html.ActionLink("Usuarios", "Index", "Admin", new { area = "" }, new { @class = "nav-link text-white" })</li>
-                        }
-                    }
-                </ul>
+                var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
+                var roleOfUser = claimsIdentity != null ? claimsIdentity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value : "Estudiante";
+
+                if (roleOfUser == "Cliente")
+                {
+
+                    <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
+                }
+                else if (roleOfUser == "Empleado")
+                {
+
+                    <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
+                }
+                else if (roleOfUser == "Admin")
+                {
+
+                    <li>@Html.ActionLink("Configurar Modulo", "ModuleRead", "Module", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Usuarios", "Index", "Admin", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                }
+            }
+            @*Seccion del usuario registrado*@
+            <div class="Login">
+                @Html.Partial("_LoginPartial")
+            </div>
+        </ul>
+
+    </header>
+
+    <div class="all">
 
 
-                @*Seccion del usuario registrado*@
-                <div class="d-flex text-white align-items-center">
-                    @Html.Partial("_LoginPartial")
-                </div>
+        @*IMAGEN FIJA ARDUINO CON STICKER DE INTRONIX*@
+        <div class="automatico">
+            <div class="c-item">
+                <img src="~/Content/imgs/ArduinoSticker-Intronix.jpeg" class="c-img" alt="...">
             </div>
         </div>
-    </nav>
+       
+        @*NAVBAR STICKY*@
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            &copy; @DateTime.Now.Year - Intronix S.A
-            <a class="text-white" style="margin-right: 5px;" href="@Url.Action("Acciones", "Home", new { tipo = "RedirectResultFacebook" })">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                </svg>
-            </a>
+        <div class="middle">
+            <div class="container body-content" style="margin-top: 0">
 
-            <a class="text-white" style="margin-right: 5px;" href="@Url.Action("Acciones", "Home", new { tipo = "RedirectResultInstagram" })">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                </svg>
-            </a>
+                @*<div class="barra"></div>*@
 
-            <a class="text-white" style="margin-right: 5px;" href="@Url.Action("Acciones", "Home", new { tipo = "RedirectResultTwitter" })">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-                </svg>
-            </a>
+                @*BOTON DE WHATSAPP*@
 
-            </p>
-        </footer>
+                <a href="https://wa.me/86273444" class="btn-wa" target="_blank">
+                    <img src="~/Content/imgs/icons8-whatsapp-96.png" class="boton-wa" />
+                </a>
+
+
+                @RenderBody()
+
+            </div>
+        </div>
     </div>
+        <div class="foot">
+            <hr class="hr" />
+            <footer>
+                <div class="footer_bar">
+                    <p class="where">Donde Ir</p>
+                    <ul class="donde_ir">
+                        <li>
+                            <a href="https://localhost:44345/">Inicio</a>
+                        </li>
+
+                        <li>
+                            <a href="https://localhost:44345/Home/About">Acerca</a>
+                        </li>
+
+                        <li>
+                            <a href="https://localhost:44345/Home/Contact">Contacto</a>
+                        </li>
+
+                        <li>
+                            <a href="https://localhost:44345/Account/Login">Módulo Limitador de Velocidad</a>
+                        </li>
+
+                        <li>
+                            <p class="numero"><b>Telefóno:</b> 2552-6789</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="line">
+
+                    <ul class="linea">
+                        <li>
+                            <a class="text-black ft" style="text-decoration: none" href="https://www.facebook.com/IntronixCR/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black ft" style="text-decoration: none" href="https://www.instagram.com/intronixcr/?igsh=eWpyYTU3czc0YWQy" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black ft" style="text-decoration:none" href="https://wa.me/86273444" target="_blank" alt="Intronix S.A">
+                                <svg class="waft" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 32 32">
+                                    <path fill-rule="evenodd" d="M 24.503906 7.503906 C 22.246094 5.246094 19.246094 4 16.050781 4 C 9.464844 4 4.101563 9.359375 4.101563 15.945313 C 4.097656 18.050781 4.648438 20.105469 5.695313 21.917969 L 4 28.109375 L 10.335938 26.445313 C 12.078125 27.398438 14.046875 27.898438 16.046875 27.902344 L 16.050781 27.902344 C 22.636719 27.902344 27.996094 22.542969 28 15.953125 C 28 12.761719 26.757813 9.761719 24.503906 7.503906 Z M 16.050781 25.882813 L 16.046875 25.882813 C 14.265625 25.882813 12.515625 25.402344 10.992188 24.5 L 10.628906 24.285156 L 6.867188 25.269531 L 7.871094 21.605469 L 7.636719 21.230469 C 6.640625 19.648438 6.117188 17.820313 6.117188 15.945313 C 6.117188 10.472656 10.574219 6.019531 16.054688 6.019531 C 18.707031 6.019531 21.199219 7.054688 23.074219 8.929688 C 24.949219 10.808594 25.980469 13.300781 25.980469 15.953125 C 25.980469 21.429688 21.523438 25.882813 16.050781 25.882813 Z M 21.496094 18.445313 C 21.199219 18.296875 19.730469 17.574219 19.457031 17.476563 C 19.183594 17.375 18.984375 17.328125 18.785156 17.625 C 18.585938 17.925781 18.015625 18.597656 17.839844 18.796875 C 17.667969 18.992188 17.492188 19.019531 17.195313 18.871094 C 16.894531 18.722656 15.933594 18.40625 14.792969 17.386719 C 13.90625 16.597656 13.304688 15.617188 13.132813 15.320313 C 12.957031 15.019531 13.113281 14.859375 13.261719 14.710938 C 13.398438 14.578125 13.5625 14.363281 13.710938 14.1875 C 13.859375 14.015625 13.910156 13.890625 14.011719 13.691406 C 14.109375 13.492188 14.058594 13.316406 13.984375 13.167969 C 13.910156 13.019531 13.3125 11.546875 13.0625 10.949219 C 12.820313 10.367188 12.574219 10.449219 12.390625 10.4375 C 12.21875 10.429688 12.019531 10.429688 11.820313 10.429688 C 11.621094 10.429688 11.296875 10.503906 11.023438 10.804688 C 10.75 11.101563 9.980469 11.824219 9.980469 13.292969 C 9.980469 14.761719 11.050781 16.183594 11.199219 16.382813 C 11.347656 16.578125 13.304688 19.59375 16.300781 20.886719 C 17.011719 21.195313 17.566406 21.378906 18 21.515625 C 18.714844 21.742188 19.367188 21.710938 19.882813 21.636719 C 20.457031 21.550781 21.648438 20.914063 21.898438 20.214844 C 22.144531 19.519531 22.144531 18.921875 22.070313 18.796875 C 21.996094 18.671875 21.796875 18.597656 21.496094 18.445313 Z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <p class="titulo_ftr">INTRONIX</p>
+                <p class="copyright">&copy; @DateTime.Now.Year - Intronix S.A</p>
+
+
+            </footer>
+        </div>
+
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

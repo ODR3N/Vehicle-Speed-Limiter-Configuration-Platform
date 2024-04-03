@@ -7,33 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte Tecnico e Informacion</title>
 
-    <style>
+    <link rel="stylesheet" href="~/Content/css/contact.css">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-        body {
-            color: white;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        /* Estilos para el título de la pestaña del navegador */
-        head > title {
-            text-align: center;
-            margin-bottom: 20px; /* Agrega espacio hacia abajo */
-        }
-    </style>
+
+    @Styles.Render("~/Content/ccsContact")
+
 </head>
 <body>
 
+    @*TEXTO AUTOMATICO CON JS*@
+
+    <div class="centro">
+
+        <div class="texto-direccion2">
+            <h2 class="info_direccion2">
+                Dirección
+            </h2>
+        </div>
+
+        <div class="texto-direccion">
+            <p id="typedtext"></p>
+        </div>
+
+        <div class="texto-horario2">
+            <h2 class="info_horario2">
+                Horario
+            </h2>
+        </div>
+
+        <div class="texto-horario">
+            <p id="typedtexthorario"></p>
+        </div>
+
+    </div>
+    @*JS DE TEXTO AUTOMATICO DIRECCION*@
+    <script type="text/javascript">
+        // set up text to print, each item in array is new line
+        var aText = new Array(
+            "Visítenos en nuestras nuevas instalaciones, ubicadas 600 mts Norte de Bomba Los Angeles, Calle La Petra en San Rafael de Oreamuno, Cartago."
+        );
+        var iSpeed = 70; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+
+        function typewriter() {
+            sContents = ' ';
+            iRow = Math.max(0, iIndex - iScrollAt);
+            var destination = document.getElementById("typedtext");
+
+            while (iRow < iIndex) {
+                sContents += aText[iRow++] + '<br />';
+            }
+            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "";
+            if (iTextPos++ == iArrLength) {
+                iTextPos = 0;
+                iIndex++;
+                if (iIndex != aText.length) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                }
+            } else {
+                setTimeout("typewriter()", iSpeed);
+            }
+        }
+
+        typewriter();
+    </script>
+    @*FIN JS DE TEXTO AUTOMATICO DIRECCION*@
+
+    @*JS DE TEXTO AUTOMATICO HORARIO*@
+    <script type="text/javascript">
+        // set up text to print, each item in array is new line
+        var bText = new Array(
+            "Lunes a Viernes de 7:30 a.m. a 5:00 p.m.");
+        var iSpeed = 70; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+
+        function typewriter2() {
+            sContents = ' ';
+            iRow = Math.max(0, iIndex - iScrollAt);
+            var destination = document.getElementById("typedtexthorario");
+
+            while (iRow < iIndex) {
+                sContents += bText[iRow++] + '<br />';
+            }
+            destination.innerHTML = sContents + bText[iIndex].substring(0, iTextPos) + "";
+            if (iTextPos++ == iArrLength) {
+                iTextPos = 0;
+                iIndex++;
+                if (iIndex != bText.length) {
+                    iArrLength = bText[iIndex].length;
+                    setTimeout("typewriter2()", 500);
+                }
+            } else {
+                setTimeout("typewriter2()", iSpeed);
+            }
+        }
+
+        typewriter2();
+    </script>
+    @*FIN JS DE TEXTO AUTOMATICO HORARIO*@
+
     <!-- Contenedor del mapa con subtítulo -->
     <div id="mapa-container">
-        <h3>Ubicación</h3>
+        <h3 class="ubicacion">Ubicación</h3>
         <!-- Inserta el iframe con el mapa de Google Maps -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.851100721484!2d-83.90728758756237!3d9.862856990194931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0df3729cb9589%3A0xf25d612882b15c0e!2sINTRONIX%20CR!5e0!3m2!1ses!2scr!4v1709253132482!5m2!1ses!2scr"
-                width="600"
-                height="450"
+                width="1500"
+                height="700"
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+
+
     </div>
 
     <!-- Otro contenido de la página aquí -->
@@ -42,7 +147,24 @@
 </html>
 
 <address>
-    <strong>Soporte:</strong>   <a href="mailto:Support@example.com">2552-6789</a><br />
-    <strong>Correo:</strong> <a href="mailto:Marketing@example.com">info@intronix.cr</a>
+    <h3 class="contactos">Contáctenos</h3>
+    
+    <div class="logos">
+        <div class="left">
+            <h3 class="titulo_logos">Correo:</h3>
+            <a href="mailto:info@intronix.cr" class="btn_correo" role="button">
+                <img class="mail_logo" src="~/Content/imgs/correo_logo.png" /> info@intronix.cr
+            </a>
+        </div>
+        <div class="right">
+            <h3 class="titulo_logos">Teléfono:</h3>
+            <span itemprop="telephone">
+                <a href="tel:2552-6789" class="btn_telefono" role="button">
+                    <img class="telefono_logo" src="~/Content/imgs/telephone_logo.png" /> 2552-6789
+                </a>
+            </span>
+        </div>
+    </div>
+
 </address>
 </main>
