@@ -1,21 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\",
+  "WorkspaceRootPath": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\pmodulolimitadorv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\diego\\source\\repos\\modulo-limitador\\pmodulolimitadorv\\models\\adminmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\models\\adminmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto intronix\\pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -26,12 +62,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:296:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
@@ -46,7 +78,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -54,11 +86,127 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:13:47.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Details.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Admin\\Details.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Details.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Admin\\Details.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:13:44.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Admin\\Delete.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:13:20.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Admin\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:12:11.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Models\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Models\\AccountViewModels.cs",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Models\\AccountViewModels.cs",
+              "RelativeToolTip": "PModuloLimitadorV\\Models\\AccountViewModels.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAD4v0wAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T04:04:31.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAwF0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T03:58:35.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAAACoAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:00:50.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Models\\AdminModel.edmx",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Models\\AdminModel.edmx",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Models\\AdminModel.edmx [Diagram1]",
+              "RelativeToolTip": "PModuloLimitadorV\\Models\\AdminModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-04-03T03:56:52.828Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Web.config",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Web.config",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Web.config",
+              "RelativeToolTip": "PModuloLimitadorV\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-03T03:50:07.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -67,24 +215,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF4AAAAQAAAA",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAK0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-14T03:58:18.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "ModuleController.cs",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
               "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAcwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -93,11 +241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "ModuleConfigure.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Intronix\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "ToolTip": "C:\\Users\\diego\\source\\repos\\Modulo-Limitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
               "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
