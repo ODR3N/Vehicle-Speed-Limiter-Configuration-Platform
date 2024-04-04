@@ -2,7 +2,6 @@
     position: absolute;
     width: 100%;
     top: 33%;
-    /*left: 5%;*/
     padding: 10px 50px;
     display: inline-block;
     text-align: center;
@@ -11,7 +10,6 @@
 
 .texto-direccion {
     margin: 0 10% 40px 10%;
-    /*width: 70%;*/
     padding-left: 2%;
 }
 
@@ -30,7 +28,6 @@
 
 .info_direccion2 {
     color: rgb(240, 173, 78);
-    /*color: white;*/
     text-align: center;
     font-size: 75px;
 }
@@ -87,19 +84,10 @@ address {
     cursor: pointer;
 }
 
-   /* .btn_contacto:hover {
-        background-color: rgba(2, 0, 36, 1);
-        color: white;
-    }*/
-
 .mail_logo {
     width: 30px;
     height: 20px;
 }
-
-/*.mail_logo:hover {
-    fill: white;
-}*/
 
 .btn_telefono {
     border-radius: 30px;
@@ -130,8 +118,7 @@ address {
     font-size: 40px;
     margin-bottom: -2%;
     font-weight: 300;
-/*    color: rgb(240, 173, 78);
-*/}
+}
 
 .left, .right {
     width: 400px;

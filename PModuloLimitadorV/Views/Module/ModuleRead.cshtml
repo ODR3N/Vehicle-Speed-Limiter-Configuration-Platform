@@ -1,56 +1,65 @@
-﻿
-@{
-    ViewBag.Title = "Seleccione el Modelo de su Vehiculo";
-}
-@model List<PModuloLimitadorV.Models.Vehiculo>
-
-<style>
-    #listasDesplegables {
-        text-align: center;
-        margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html>
+<head>
+    @{
+        ViewBag.Title = "Seleccione el Modelo de su Vehiculo";
     }
+    @model List<PModuloLimitadorV.Models.Vehiculo>
 
-    .listaDesplegable {
-        margin-bottom: 10px; /* Espacio entre las listas desplegables */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    #listasDesplegables h4 {
-        color: white; /* Aplica el color blanco a los elementos h4 dentro de #listasDesplegables */
-    }
-</style>
+    <link rel="stylesheet" href="~/Content/css/moduleRead.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<!-- Contenedor para las listas desplegables -->
-<div id="listasDesplegables">
-    <div class="listaDesplegable">
-        <h4>Marca</h4>
-        <select id="listaMarca">
-            <option value="">Seleccione Marca</option>
-            <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
-        </select>
+</head>
+
+<body>
+
+    <!-- Contenedor para las listas desplegables -->
+    <div id="listasDesplegables">
+        <div class="listaDesplegable">
+            <h4>Marca</h4>
+            <select id="listaMarca">
+                <option value="">Seleccione Marca</option>
+                <option value="marca1">Marca 1</option>
+                <option value="marca2">Marca 2</option>
+                <option value="marca3">Marca 3</option>
+                <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
+            </select>
+        </div>
+
+        <div class="listaDesplegable">
+            <h4>Modelo</h4>
+            <select id="listaModelo">
+                <option value="">Seleccione Modelo</option>
+                <option value="modelo1">Modelo 1</option>
+                <option value="modelo2">Modelo 2</option>
+                <option value="modelo3">Modelo 3</option>
+                <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
+            </select>
+        </div>
+
+        <div class="listaDesplegable">
+            <h4>Año</h4>
+            <select id="listaAnio">
+                <option value="">Seleccione Año</option>
+                <option value="anio1">Año 1</option>
+                <option value="anio2">Año 2</option>
+                <option value="anio3">Año 3</option>
+                <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
+            </select>
+        </div>
     </div>
 
-    <div class="listaDesplegable">
-        <h4>Modelo</h4>
-        <select id="listaModelo">
-            <option value="">Seleccione Modelo</option>
-            <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
-        </select>
+    <!-- Botón -->
+    <div class="boton">
+        <button id="btnConectar">Conectar</button>
     </div>
 
-    <div class="listaDesplegable">
-        <h4>Año</h4>
-        <select id="listaAnio">
-            <option value="">Seleccione Año</option>
-            <!-- Puedes llenar dinámicamente las opciones desde el modelo si es necesario -->
-        </select>
-    </div>
-</div>
-
-<!-- Botón -->
-<button id="btnConectar">Conectar</button>
-
-@section scripts {
-    <script>
+    @section scripts {
+        <script>
         $(document).ready(function () {
             $("#btnConectar").click(function () {
                 // Ajustar la URL con @*@Url.Action*@ para generar la URL de forma dinámica
@@ -73,5 +82,8 @@
                 });
             });
         });
-    </script>
-}
+        </script>
+    }
+
+</body>
+</html>

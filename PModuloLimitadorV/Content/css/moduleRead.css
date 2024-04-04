@@ -1,0 +1,53 @@
+﻿* {
+    font-family: "Poppins", sans-serif;
+}
+
+#listasDesplegables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px 20px;
+}
+
+.listaDesplegable {
+    margin: 50px;
+    text-align: center;
+}
+
+    .listaDesplegable h4 {
+        margin-bottom: 5px;
+    }
+
+    .listaDesplegable select {
+        width: 200px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        font-size: 16px;
+        outline: none;
+    }
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    
+}
+
+#btnConectar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(4, 0, 70, 1);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    #btnConectar:hover {
+        font-weight: 700;
+        transform: scale(1.02);
+    }

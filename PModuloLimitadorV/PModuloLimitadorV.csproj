@@ -229,12 +229,16 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\css\about.css" />
+    <Content Include="Content\css\changePassword.css" />
+    <Content Include="Content\css\contact.css" />
     <Content Include="Content\css\details.css" />
     <Content Include="Content\css\footer.css" />
     <Content Include="Content\css\general.css" />
     <Content Include="Content\css\index.css" />
     <Content Include="Content\css\indexHome.css" />
     <Content Include="Content\css\login.css" />
+    <Content Include="Content\css\manage.css" />
+    <Content Include="Content\css\moduleRead.css" />
     <Content Include="Content\css\navbar.css" />
     <Content Include="Content\imgs\Afuera.jpg" />
     <Content Include="Content\imgs\Arduino.jpeg" />
@@ -283,7 +287,6 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\css\contact.css" />
     <EntityDeploy Include="Models\AdminModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AdminModel.Designer.cs</LastGenOutput>

@@ -1,116 +1,117 @@
-/*style.css*/
-/*.cuerpo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    line-height: 1.5;
-    min-height: 100vh;
-    background: #f3f3f3;
-    flex-direction: column;
+* {
     margin: 0;
-}*/
-/*
-.main {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    transition: transform 0.2s;
-    width: 500px;
-    text-align: center;
-    justify-content: center;
-}
-
-h1 {
-    color: #4CAF50;
-}
-
-label {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: #555;
-    font-weight: bold;
-}
-
-
-input {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
-button {
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #4CAF50;
-    width: 100%;
-    font-size: 16px;
-}
-
-.wrap {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main i {
-    margin-left: -30px;
-    cursor: pointer;
-}
-
-.sqr {
-    display: flex;
-    
-}
-
-*/
-/*------------------------*/
-
-
-
-
-
-:root {
-    --color1: #634C27;
-    --color2: #BD4B2C;
-    --color3: #9F864C;
-    --color4: #B8B15B;
-    --color4-1: #aba354;
-    --color5: #2D2533;
-    --color6: #D7D2CB;
-    --blanco: #FFFF;
-}
-
-body {
-    background-image: url(../../images/mecanicoBackground.jpg);
-    background-repeat: repeat;
+.c-item {
+    background-image: url(../imgs/fondo1.jpg); 
     background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    filter: brightness(0.2);
+}
+
+.login-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.form {
+    position: relative;
+    filter: drop-shadow(0 0 2px #000000);
+    border-radius: 5px;
+    width: 440px;
+    height: 465px;
+    background-color: #ffffff;
+    padding: 40px;
+    z-index: 1;
 }
 
 .titles {
-    color: var(--color2);
+    color: rgb(240, 173, 78); /*yellow*/
 }
 
-main {
-
+.subtitle {
+    font-weight: 500;
 }
 
-.row {
+.box-sizes {
+    width: 100%;
+}
+
+.form input {
+    max-width: 100%;
+    padding: 12px 5px 12px 15px;
+}
+
+span {
+    color: black;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.form button {
+    outline: 0;
+    background: rgba(2, 0, 36, 1);
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 11px;
+    width: 100px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.contra {
+    margin-top: 5%;
+}
+
+.boton {
+    display: flex;
     justify-content: center;
 }
+
+.form button:hover {
+    color: rgba(2, 0, 36, 1);
+    transform: scale(1.04);
+    background: white;
+    font-weight: 700;
+}
+
+.message {
+    margin: 15px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.message a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+    .message a:hover {
+        text-decoration: none;
+        color: rgb(240, 173, 78);
+    }
