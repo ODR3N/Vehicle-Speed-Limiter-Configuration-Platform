@@ -2,40 +2,50 @@
     ViewBag.Title = "Configurar Arduino";
 }
 
+<script>
+    function validarLimite() {
+        var limite = document.getElementById("limite").value;
+        if (limite !== "" && (limite <= 25 || limite >= 125)) {
+            alert("El valor debe estar dentro del rango de 26 a 124.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
 <div class="container">
     <div class="row">
         <!-- Columna izquierda para el formulario -->
         <div class="col-md-6">
             <h2 style="color: white;">Configurar Arduino</h2>
 
-            @using (Html.BeginForm("UpdateArduinoSettings", "Module", FormMethod.Post))
+            @using (Html.BeginForm("UpdateArduinoSettings", "Module", FormMethod.Post, new { onsubmit = "return validarLimite();" }))
             {
                 <div class="form-group">
                     <label for="limite" style="color: black;">Límite de Velocidad:</label>
-                    <input type="number" class="form-control" id="limite" name="limite" required>
+                    <input type="number" class="form-control" id="limite" name="limite">
                 </div>
                 <div class="form-group">
                     <label for="umbral" style="color: black;">Umbral:</label>
-                    <input type="number" class="form-control" id="umbral" name="umbral" required>
+                    <input type="number" class="form-control" id="umbral" name="umbral">
                 </div>
                 <div class="form-group">
                     <label for="FC" style="color: black;">Factor de Conversión:</label>
-                    <input type="number" class="form-control" id="FC" name="FC" step="0.01" required>
+                    <input type="number" class="form-control" id="FC" name="FC" step="0.01">
                 </div>
                 <div class="form-group">
                     <label for="SetMAF" style="color: black;">Valor de MAF:</label>
-                    <input type="number" class="form-control" id="SetMAF" name="SetMAF" step="0.01" required>
+                    <input type="number" class="form-control" id="SetMAF" name="SetMAF" step="0.01">
                 </div>
                 <div class="form-group">
                     <label for="delayT_In" style="color: black;">Retardo de Entrada (ms):</label>
-                    <input type="number" class="form-control" id="delayT_In" name="delayT_In" required>
+                    <input type="number" class="form-control" id="delayT_In" name="delayT_In">
                 </div>
                 <div class="form-group">
                     <label for="delayT_Out" style="color: black;">Retardo de Salida (ms):</label>
-                    <input type="number" class="form-control" id="delayT_Out" name="delayT_Out" required>
+                    <input type="number" class="form-control" id="delayT_Out" name="delayT_Out">
                 </div>
                 <div style="margin-top: 10px; margin-bottom: 10px;">
-
                     <button type="submit" class="btn btn-primary" style="color: white;">Guardar</button>
                 </div>
             }

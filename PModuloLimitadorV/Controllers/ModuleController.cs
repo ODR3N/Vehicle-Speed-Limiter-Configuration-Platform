@@ -60,34 +60,105 @@ namespace PModuloLimitadorV.Controllers
         [HttpPost]
         public ActionResult UpdateLimit(int limite)
         {
-            // Abrir la conexión serial
-            serialPort.Open();
+            // Obtener los puertos COM disponibles
+            var puertosDisponibles = SerialPort.GetPortNames();
 
-            // Enviar el nuevo límite al Arduino
-            serialPort.Write("A" + limite);
+            if (puertosDisponibles.Length > 0)
+            {
+                // Seleccionar el primer puerto disponible
+                string puerto = puertosDisponibles[0];
 
-            // Cerrar la conexión serial
-            serialPort.Close();
+                // Abrir la conexión serial en el puerto seleccionado
+                using (var serialPort = new SerialPort(puerto, 9600))
+                {
+                    serialPort.Open();
 
-            // Redireccionar a la vista de configuración con un mensaje de éxito
-            TempData["Message"] = "Límite de velocidad actualizado correctamente.";
-            return RedirectToAction("ModuleConfigure");
+                    // Enviar el nuevo límite al Arduino
+                    serialPort.Write("A" + limite);
+
+                    // Cerrar la conexión serial
+                    serialPort.Close();
+                }
+
+                // Redireccionar a la vista de configuración con un mensaje de éxito
+                TempData["Message"] = "Límite de velocidad actualizado correctamente.";
+                return RedirectToAction("ModuleConfigure");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "No se ha detectado el módulo. Asegúrese de que el módulo esté conectado correctamente.";
+                return RedirectToAction("ModuleConfigure");
+            }
         }
+
 
         [HttpPost]
-        public ActionResult UpdateArduinoSettings(int limite, int umbral, float FC, float SetMAF, int delayT_In, int delayT_Out)
+        public ActionResult UpdateArduinoSettings(int? limite, int? umbral, float? FC, float? SetMAF, int? delayT_In, int? delayT_Out)
         {
-            serialPort.Open();
-            serialPort.Write("A" + limite);
-            serialPort.Write("B" + umbral);
-            serialPort.Write("C" + FC);
-            serialPort.Write("D" + SetMAF);
-            serialPort.Write("E" + delayT_In);
-            serialPort.Write("F" + delayT_Out);
-            serialPort.Close();
+            // Obtener los puertos COM disponibles
+            var puertosDisponibles = SerialPort.GetPortNames();
 
-            TempData["Message"] = "Configuración del Arduino actualizada correctamente.";
-            return RedirectToAction("ConfigureArduino");
+            if (puertosDisponibles.Length > 0)
+            {
+                // Seleccionar el primer puerto disponible
+                string puerto = puertosDisponibles[0];
+
+                // Abrir la conexión serial en el puerto seleccionado
+                using (var serialPort = new SerialPort(puerto, 9600))
+                {
+                    serialPort.Open();
+
+                    // Verificar si se proporciona un valor para el límite
+                    if (limite.HasValue)
+                    {
+                        // Enviar el nuevo límite al Arduino
+                        serialPort.Write("A" + limite);
+                    }
+
+                    // Verificar si se proporciona un valor para el umbral
+                    if (umbral.HasValue)
+                    {
+                        serialPort.Write("B" + umbral);
+                    }
+
+                    // Verificar si se proporciona un valor para el FC
+                    if (FC.HasValue)
+                    {
+                        serialPort.Write("C" + FC);
+                    }
+
+                    // Verificar si se proporciona un valor para el SetMAF
+                    if (SetMAF.HasValue)
+                    {
+                        serialPort.Write("D" + SetMAF);
+                    }
+
+                    // Verificar si se proporciona un valor para el delayT_In
+                    if (delayT_In.HasValue)
+                    {
+                        serialPort.Write("E" + delayT_In);
+                    }
+
+                    // Verificar si se proporciona un valor para el delayT_Out
+                    if (delayT_Out.HasValue)
+                    {
+                        serialPort.Write("F" + delayT_Out);
+                    }
+
+                    // Cerrar la conexión serial
+                    serialPort.Close();
+                }
+
+                TempData["Message"] = "Configuración del Arduino actualizada correctamente.";
+                return RedirectToAction("ConfigureArduino");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "No se ha detectado el módulo. Asegúrese de que el módulo esté conectado correctamente.";
+                return RedirectToAction("ConfigureArduino");
+            }
         }
+
+
     }
 }

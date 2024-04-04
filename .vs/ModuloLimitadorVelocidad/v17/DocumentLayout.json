@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyectolimitador\\pmodulolimitadorv\\views\\module\\configurearduino.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\configurearduino.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyectolimitador\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,39 +67,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ConfigureArduino.cshtml",
               "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml*",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-04T00:35:25.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ModuleController.cs",
               "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
               "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
               "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAcwFkAAAA2AAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAowGwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T02:32:59.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ModuleConfigure.cshtml",
               "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
               "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml*",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-14T02:32:47.463Z",
               "EditorCaption": ""
