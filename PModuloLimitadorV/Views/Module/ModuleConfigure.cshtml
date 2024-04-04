@@ -2,16 +2,29 @@
     ViewBag.Title = "Configurar Módulo";
 }
 
-<h2 style="color: white;">Configurar Módulo</h2>
+<div class="container">
+    <div class="row">
+        <!-- Columna izquierda para el formulario -->
+        <div class="col-md-6">
+            <h2 style="color: black; margin-bottom: 20px;">Configurar Módulo</h2>
 
-@using (Html.BeginForm("UpdateLimit", "Module", FormMethod.Post))
-{
-    <div class="form-group">
-        <label for="limite" style="color: white;">Nuevo Límite de Velocidad:</label>
-        <input type="number" class="form-control" id="limite" name="limite" required>
+            @using (Html.BeginForm("UpdateLimit", "Module", FormMethod.Post))
+            {
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="limite" style="color: black;">Nuevo Límite de Velocidad:</label>
+                    <input type="number" class="form-control" id="limite" name="limite" required>
+                </div>
+                <div style="margin-top: 10px; margin-bottom: 10px;">
+                    <button type="submit" class="btn btn-primary" style="color: white;">Guardar</button>
+                </div>
+            }
+        </div>
+        <!-- Columna derecha para explicaciones de variables -->
+        <div class="col-md-6">
+            <h2 style="color: black; margin-top: 20px; margin-bottom: 20px;">Descripción de Variables</h2>
+            <p style="color: black; margin-bottom: 20px;"><strong>Límite de Velocidad:</strong> Descripción del límite de velocidad.</p>
+            <!-- Añade aquí las descripciones de las demás variables si es necesario -->
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
-}
-
-
+</div>
 

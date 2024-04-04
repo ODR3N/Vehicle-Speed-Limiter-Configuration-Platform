@@ -36,6 +36,12 @@ namespace PModuloLimitadorV.Controllers
             return View();
         }
 
+        public ActionResult ConfigureArduino()
+        {
+            return View();
+        }
+
+
         [HttpGet]
         public ActionResult ObtenerPuertosDisponibles()
         {
@@ -66,6 +72,22 @@ namespace PModuloLimitadorV.Controllers
             // Redireccionar a la vista de configuración con un mensaje de éxito
             TempData["Message"] = "Límite de velocidad actualizado correctamente.";
             return RedirectToAction("ModuleConfigure");
+        }
+
+        [HttpPost]
+        public ActionResult UpdateArduinoSettings(int limite, int umbral, float FC, float SetMAF, int delayT_In, int delayT_Out)
+        {
+            serialPort.Open();
+            serialPort.Write("A" + limite);
+            serialPort.Write("B" + umbral);
+            serialPort.Write("C" + FC);
+            serialPort.Write("D" + SetMAF);
+            serialPort.Write("E" + delayT_In);
+            serialPort.Write("F" + delayT_Out);
+            serialPort.Close();
+
+            TempData["Message"] = "Configuración del Arduino actualizada correctamente.";
+            return RedirectToAction("ConfigureArduino");
         }
     }
 }

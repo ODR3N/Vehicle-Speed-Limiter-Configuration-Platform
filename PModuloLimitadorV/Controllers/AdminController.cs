@@ -35,8 +35,8 @@ namespace PModuloLimitadorV.Controllers
 		// GET: Admin
 		public ActionResult Index()
 		{
-			return View(db.AspNetUsers.ToList());
-		}
+            return View(db.AspNetUsers.ToList());
+        }
 
 		// GET: Admin/Details/5
 		public ActionResult Details(string id)
