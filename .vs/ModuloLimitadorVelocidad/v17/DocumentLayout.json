@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\",
+  "WorkspaceRootPath": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyectolimitador\\pmodulolimitadorv\\views\\module\\configurearduino.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\configurearduino.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto limitador\\pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyecto limitador\\pmodulolimitadorv\\content\\css\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\content\\css\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\module\\moduleconfigure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|c:\\users\\adrfc\\onedrive\\escritorio\\proyectolimitador\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\pmodulolimitadorv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D8857481-6500-4299-8438-86B386CB23AF}|PModuloLimitadorV\\PModuloLimitadorV.csproj|solutionrelative:pmodulolimitadorv\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +42,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs*",
+              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ModuleController.cs*",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAwH0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T23:34:26.549Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -54,55 +83,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAACRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-04T00:35:40.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConfigureArduino.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml*",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ConfigureArduino.cshtml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-04T00:35:25.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ModuleController.cs",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "RelativeToolTip": "PModuloLimitadorV\\Controllers\\ModuleController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAowGwAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:32:59.422Z",
+              "Title": "contact.css",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Content\\css\\contact.css",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Content\\css\\contact.css",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Content\\css\\contact.css",
+              "RelativeToolTip": "PModuloLimitadorV\\Content\\css\\contact.css",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-05T00:29:41.405Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAIAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-05T00:27:45.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-05T00:22:31.529Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ModuleConfigure.cshtml",
-              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\ProyectoLimitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAAALIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T02:32:47.463Z",
+              "WhenOpened": "2024-04-05T00:20:15.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Web.config",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Web.config",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Web.config",
+              "RelativeToolTip": "PModuloLimitadorV\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAACqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-04T22:39:48.69Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAABRwDoAAACFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T00:35:40.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModuleConfigure.cshtml",
+              "DocumentMoniker": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "RelativeDocumentMoniker": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "ToolTip": "C:\\Users\\adrfc\\OneDrive\\Escritorio\\Proyecto Limitador\\PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "RelativeToolTip": "PModuloLimitadorV\\Views\\Module\\ModuleConfigure.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T02:32:47.463Z"
             }
           ]
         },

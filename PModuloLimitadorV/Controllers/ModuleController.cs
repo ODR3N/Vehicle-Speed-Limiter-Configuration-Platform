@@ -124,13 +124,13 @@ namespace PModuloLimitadorV.Controllers
                     // Verificar si se proporciona un valor para el FC
                     if (FC.HasValue)
                     {
-                        serialPort.Write("C" + FC);
+                        serialPort.Write("C" + FC.Value.ToString("F1"));
                     }
 
                     // Verificar si se proporciona un valor para el SetMAF
                     if (SetMAF.HasValue)
                     {
-                        serialPort.Write("D" + SetMAF);
+                        serialPort.Write("D" + SetMAF.Value.ToString("F1"));
                     }
 
                     // Verificar si se proporciona un valor para el delayT_In

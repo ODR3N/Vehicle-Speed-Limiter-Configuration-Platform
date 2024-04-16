@@ -177,27 +177,6 @@
         }
         else if (roleOfUser == "Empleado")
         {
-            <h3>Bienvenidos Empleados Intronix</h3>
-            <hr />
-
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-6">
-                        <div class="card mb-4" style="width: 18rem;">
-                            <img src="~/Content/imgs/Presentacion.png" class="card-img-top" alt="Imagen de mis recetas">
-                            <div class="card-body">
-                                <h5 class="card-title">Recetas</h5>
-                                <p class="card-text">Explora todas las recetas creadas.</p>
-                                @Html.ActionLink("Ir a mis recetas", "Index", "Recetas", new { area = "" }, new { @class = "btn btn-light" })
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
 
         }
         else if (roleOfUser == "Cliente")
@@ -244,7 +223,7 @@
             <script type="text/javascript">
                 // set up text to print, each item in array is new line
                 var aText = new Array(
-                    "Bienvenidos a INTRONIX: Expertos en tecnologia Automotriz."
+                    "Bienvenidos a INTRONIX: Expertos en Electronica Automotriz."
                 );
             var iSpeed = 70; // time delay of print out
             var iIndex = 0; // start printing array at this posision
@@ -281,40 +260,6 @@
 
 
 
-
-
-
-
-            <h3>Bienvenidos Cliente Intronix</h3>
-            <hr />
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-6">
-                        <div class="card mb-4" style="width: 18rem;">
-                            <img src="~/Content/imgs/Presentacion.png" class="card-img-top" alt="Imagen de mis recetas">
-                            <div class="card-body">
-                                <h5 class="card-title">Mis Recetas</h5>
-                                <p class="card-text">Explora un mundo de sabores y crea tus propias recetas.</p>
-                                @Html.ActionLink("Ir a mis recetas", "Index", "Recetas", new { area = "" }, new { @class = "btn btn-light" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="card mb-4" style="width: 18rem;">
-                            <img src="~/Content/imgs/CursosL.jpg" style="height:191px;" class="card-img-top" alt="Imagen mis cursos">
-                            <div class="card-body">
-                                <h5 class="card-title">Cursos</h5>
-                                <p class="card-text">Accede a tus cursos.</p>
-                                @Html.ActionLink("Ir a mis cursos", "Index", "Cursoes", new { area = "" }, new { @class = "btn btn-light" })
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
 
         }
         else
