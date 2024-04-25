@@ -171,25 +171,41 @@
         if (roleOfUser == "Admin")
         {
 
-            <h3>Administración</h3>
-            <hr />
+            <div class="centro">
+                <div class="texto-direccion2">
+                    <h2 class="info_direccion2">
+                        Administración
+                    </h2>
+                </div>
+            </div>
 
         }
         else if (roleOfUser == "Empleado")
         {
 
+            <div class="centro">
+                <div class="texto-direccion2">
+                    <h2 class="info_direccion2">
+                        Empleado
+                    </h2>
+                </div>
+            </div>
+
         }
         else if (roleOfUser == "Cliente")
         {
 
-
-            <div class="texto-saludo">
-                <h2 id="typedtext"></h2>
+            <div class="posicion1">
+                <div class="texto-saludo4">
+                    <h2 id="typedtext"></h2>
+                </div>
             </div>
 
-            <div class="texto-saludo2">
-                <p>Si deseas configurar tu Módulo Limitador de Velocidad haz click en el siguiente botón.</p>
-                <button onclick="togglePopup()" type="button" class="btn btn-outline-warning">MLV</button>
+            <div class="posicion2">
+                <div class="texto-saludo5">
+                    <p>Si deseas configurar tu Módulo Limitador de Velocidad haz click en el siguiente botón.</p>
+                    <button onclick="togglePopup()" type="button" class="btn btn-outline-warning">MLV</button>
+                </div>
             </div>
 
 
@@ -223,39 +239,39 @@
             <script type="text/javascript">
                 // set up text to print, each item in array is new line
                 var aText = new Array(
-                    "Bienvenidos a INTRONIX: Expertos en Electronica Automotriz."
+                    "Te damos la bienvenida a INTRONIX: Expertos en Electronica Automotriz."
                 );
-            var iSpeed = 70; // time delay of print out
-            var iIndex = 0; // start printing array at this posision
-            var iArrLength = aText[0].length; // the length of the text array
-            var iScrollAt = 20; // start scrolling up at this many lines
+                var iSpeed = 70; // time delay of print out
+                var iIndex = 0; // start printing array at this posision
+                var iArrLength = aText[0].length; // the length of the text array
+                var iScrollAt = 20; // start scrolling up at this many lines
 
-            var iTextPos = 0; // initialise text position
-            var sContents = ''; // initialise contents variable
-            var iRow; // initialise current row
+                var iTextPos = 0; // initialise text position
+                var sContents = ''; // initialise contents variable
+                var iRow; // initialise current row
 
-            function typewriter() {
-                sContents = ' ';
-                iRow = Math.max(0, iIndex - iScrollAt);
-                var destination = document.getElementById("typedtext");
+                function typewriter() {
+                    sContents = ' ';
+                    iRow = Math.max(0, iIndex - iScrollAt);
+                    var destination = document.getElementById("typedtext");
 
-                while (iRow < iIndex) {
-                    sContents += aText[iRow++] + '<br />';
-                }
-                destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-                if (iTextPos++ == iArrLength) {
-                    iTextPos = 0;
-                    iIndex++;
-                    if (iIndex != aText.length) {
-                        iArrLength = aText[iIndex].length;
-                        setTimeout("typewriter()", 500);
+                    while (iRow < iIndex) {
+                        sContents += aText[iRow++] + '<br />';
                     }
-                } else {
-                    setTimeout("typewriter()", iSpeed);
+                    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+                    if (iTextPos++ == iArrLength) {
+                        iTextPos = 0;
+                        iIndex++;
+                        if (iIndex != aText.length) {
+                            iArrLength = aText[iIndex].length;
+                            setTimeout("typewriter()", 500);
+                        }
+                    } else {
+                        setTimeout("typewriter()", iSpeed);
+                    }
                 }
-            }
 
-            typewriter();
+                typewriter();
             </script>
 
 

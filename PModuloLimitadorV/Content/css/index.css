@@ -299,3 +299,73 @@ h3 {
         background-color: white;
         color: rgba(2, 0, 36, 1); /*dark blue*/
     }
+
+/*    DEPENDIENDO del USUARIO*/
+
+/*ADMIN*/
+
+.centro {
+    position: absolute;
+    width: -webkit-fill-available;
+    top: 33%;
+    padding: 10px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: -14%;
+}
+
+.texto-direccion2 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.info_direccion2 {
+    color: rgb(240, 173, 78);
+    text-align: center;
+    font-size: 75px;
+}
+
+/*CLIENTE*/
+
+.texto-saludo4 {
+    position: absolute;
+    top: 33%;
+    /* left: 5%; */
+    padding: 10px;
+    /* margin-right: 58%; */
+    display: inline-block;
+}
+
+.posicion1 {
+    position: absolute;
+    width: -webkit-fill-available;
+    top: 33%;
+    padding: 10px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: -14%;
+}
+
+.posicion2 {
+    position: absolute;
+    width: -webkit-fill-available;
+    top: 43%;
+    padding: 10px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: -14%;
+    margin-top: 1%;
+}
+
+.texto-saludo5 {
+    width: 450px;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    top: 50%;
+    /* left: 5%; */
+    padding: 10px;
+}
